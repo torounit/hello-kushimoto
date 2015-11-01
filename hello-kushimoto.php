@@ -71,6 +71,9 @@ Class Miyasan implements Megumi {
 	 */
 	public function getWords() {
 		return array(
+			"え？まだMAMPで消耗してるの？",
+			"え？まだこれからもMAMPで消耗してるの？",
+			"Windowsはガン無視です 笑",
 			"sudoならインストールできた？ だめですよそんなのずっとsudoですることになりますよ？",
 			"sudoなんて邪道ですよ。 そんなもんできたことになりません。",
 			"あのねみなさんね ブログに書いてある コマンドとか 実行しちゃうでしょ あれ大体間違ってますよ",
