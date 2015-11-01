@@ -11,6 +11,7 @@ Domain Path: /languages
 
 Class Hello_Kushimoto {
 
+	/** @var Megumi  */
 	private $megumi;
 
 	public function __construct( Megumi $megumi ) {
@@ -44,19 +45,23 @@ Class Hello_Kushimoto {
 	}
 
 
+
+
 }
 
 interface Megumi {
 
+	/**
+	 * @return string
+	 */
 	public function say();
 }
 
 Class Miyasan implements Megumi {
 
 	public function say() {
-
-		$words =$this->getWords() ;
-		return $words[array_rand($words)];
+		$words = $this->getWords();
+		return $words[ array_rand( $words ) ];
 	}
 
 	/**
@@ -69,7 +74,6 @@ Class Miyasan implements Megumi {
 			"あのねみなさんね ブログに書いてある コマンドとか 実行しちゃうでしょ あれ大体間違ってますよ",
 			"みなさん自分が 苦労したこと記事に 書きたくなるでしょ？ 苦労したって事は それはどっか 間違ってんですよ"
 		);
-
 	}
 
 

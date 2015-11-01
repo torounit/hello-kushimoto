@@ -2,9 +2,10 @@
 
 class SampleTest extends WP_UnitTestCase {
 
-	function test_sample() {
-		// replace this with some actual testing code
-		$this->assertTrue( true );
+	public function test_shortcode() {
+		$miyasan = new Miyasan();
+		$words = $miyasan->getWords();
+		$word = do_shortcode( '[kushimoto]' );
+		$this->assertContains( $word, $words );
 	}
 }
-
