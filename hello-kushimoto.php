@@ -55,41 +55,22 @@ Class Miyasan implements Megumi {
 
 	public function say() {
 
-		$words = explode( "\n", $this->getWords() );
-		return wptexturize( $words[ mt_rand( 0, count( $words ) - 1 ) ] );
+		$words =$this->getWords() ;
+		return $words[array_rand($words)];
 	}
 
+	/**
+	 * @return array
+	 */
 	public function getWords() {
-		return  "Hello, Dolly
-Well, hello, Dolly
-It's so nice to have you back where you belong
-You're lookin' swell, Dolly
-I can tell, Dolly
-You're still glowin', you're still crowin'
-You're still goin' strong
-We feel the room swayin'
-While the band's playin'
-One of your old favourite songs from way back when
-So, take her wrap, fellas
-Find her an empty lap, fellas
-Dolly'll never go away again
-Hello, Dolly
-Well, hello, Dolly
-It's so nice to have you back where you belong
-You're lookin' swell, Dolly
-I can tell, Dolly
-You're still glowin', you're still crowin'
-You're still goin' strong
-We feel the room swayin'
-While the band's playin'
-One of your old favourite songs from way back when
-Golly, gee, fellas
-Find her a vacant knee, fellas
-Dolly'll never go away
-Dolly'll never go away
-Dolly'll never go away again";
-	}
+		return array(
+			"sudoならインストールできた？ だめですよそんなのずっとsudoですることになりますよ？",
+			"sudoなんて邪道ですよ。 そんなもんできたことになりません。",
+			"あのねみなさんね ブログに書いてある コマンドとか 実行しちゃうでしょ あれ大体間違ってますよ",
+			"みなさん自分が 苦労したこと記事に 書きたくなるでしょ？ 苦労したって事は それはどっか 間違ってんですよ"
+		);
 
+	}
 
 
 }
