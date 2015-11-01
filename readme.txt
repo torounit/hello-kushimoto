@@ -17,7 +17,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Installation ==
 
-1. Upload the entire `caxias-hosoya` folder to the `/wp-content/plugins/` directory.
+1. Upload the entire `hello-kushimoto` folder to the `/wp-content/plugins/` directory.
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Changelog ==
