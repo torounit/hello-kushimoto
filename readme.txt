@@ -1,8 +1,6 @@
 === Hello-kushimoto ===
-Contributors: (this should be a list of wordpress.org userid's)
-Donate link: http://example.com/
-Tags: comments, spam
-Requires at least: 3.0.1
+Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph
+Requires at least: 4.1
 Tested up to: 3.4
 Stable tag: 4.3
 License: GPLv2 or later

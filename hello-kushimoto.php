@@ -1,11 +1,9 @@
 <?php
 /*
 Plugin Name: Hello-kushimoto
-Version: 0.1-alpha
+Version: 1.0
 Description: PLUGIN DESCRIPTION HERE
-Author: YOUR NAME HERE
-Author URI: YOUR SITE HERE
-Plugin URI: PLUGIN SITE HERE
+Author: Toro_Unit
 Text Domain: hello-kushimoto
 Domain Path: /languages
 */
