@@ -22,7 +22,7 @@ Class Hello_Kushimoto {
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'add_style' ) );
 		add_action( 'admin_notices', array( $this, 'render' ) );
-		
+
 		add_shortcode( 'kushimoto', array( $this->speaker, 'say' ) );
 
 	}

@@ -1,5 +1,5 @@
 === Hello-kushimoto ===
-Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph
+Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph, nukaga
 Requires at least: 4.3
 Tested up to: 4.3
 Stable tag: 1.0
