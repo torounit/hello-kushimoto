@@ -13,22 +13,24 @@ Domain Path: /languages
 
 Class Hello_Kushimoto {
 
-	/** @var Speaker  */
+	/** @var Speaker */
 	private $speaker;
 
 	public function __construct( Speaker $speaker ) {
 
 		$this->speaker = $speaker;
 
-		add_action( 'admin_head', array( $this, 'admin_head' ) );
-		add_action( 'admin_notices', array( $this, 'admin_notices' ) );
+		add_action( 'admin_enqueue_scripts', array( $this, 'add_style' ) );
+		add_action( 'admin_notices', array( $this, 'render' ) );
+		
 		add_shortcode( 'kushimoto', array( $this->speaker, 'say' ) );
+
 	}
 
 	/**
 	 * show text in admin.
 	 */
-	public function admin_notices() {
+	public function render() {
 		$chosen = $this->speaker->say();
 		echo "<p id='kusimoto'>$chosen</p>";
 	}
@@ -36,11 +38,11 @@ Class Hello_Kushimoto {
 	/**
 	 * add styles.
 	 */
-	public function admin_head() {
+	public function add_style() {
+
 		$x = is_rtl() ? 'left' : 'right';
 
-		echo "
-        <style type='text/css'>
+		$style = "
         #kusimoto {
             float: $x;
             padding-$x: 15px;
@@ -48,11 +50,9 @@ Class Hello_Kushimoto {
             margin: 0;
             font-size: 11px;
         }
-        </style>
         ";
+		wp_add_inline_style( 'wp-admin', $style );
 	}
-
-
 
 
 }
@@ -69,6 +69,7 @@ Class Miyasan implements Speaker {
 
 	public function say() {
 		$words = $this->getWords();
+
 		return $words[ array_rand( $words ) ];
 	}
 
@@ -100,3 +101,4 @@ function hello_kushimoto_init() {
 }
 
 add_action( 'plugins_loaded', 'hello_kushimoto_init' );
+
