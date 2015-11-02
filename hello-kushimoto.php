@@ -13,23 +13,29 @@ Domain Path: /languages
 
 Class Hello_Kushimoto {
 
-	/** @var Megumi  */
-	private $megumi;
+	/** @var Speaker  */
+	private $speaker;
 
-	public function __construct( Megumi $megumi ) {
+	public function __construct( Speaker $speaker ) {
 
-		$this->megumi = $megumi;
+		$this->speaker = $speaker;
 
 		add_action( 'admin_head', array( $this, 'admin_head' ) );
 		add_action( 'admin_notices', array( $this, 'admin_notices' ) );
-		add_shortcode( 'kushimoto', array( $this->megumi, 'say' ) );
+		add_shortcode( 'kushimoto', array( $this->speaker, 'say' ) );
 	}
 
+	/**
+	 * show text in admin.
+	 */
 	public function admin_notices() {
-		$chosen = $this->megumi->say();
+		$chosen = $this->speaker->say();
 		echo "<p id='kusimoto'>$chosen</p>";
 	}
 
+	/**
+	 * add styles.
+	 */
 	public function admin_head() {
 		$x = is_rtl() ? 'left' : 'right';
 
@@ -51,7 +57,7 @@ Class Hello_Kushimoto {
 
 }
 
-interface Megumi {
+interface Speaker {
 
 	/**
 	 * @return string
@@ -59,7 +65,7 @@ interface Megumi {
 	public function say();
 }
 
-Class Miyasan implements Megumi {
+Class Miyasan implements Speaker {
 
 	public function say() {
 		$words = $this->getWords();
@@ -78,9 +84,9 @@ Class Miyasan implements Megumi {
 			"え？まだこれからもMAMPで消耗してるの？",
 			"Windowsはガン無視です 笑",
 			"sudoならインストールできた？ だめですよそんなのずっとsudoですることになりますよ？",
-			"sudoなんて邪道ですよ。 そんなもんできたことになりません。",
-			"あのねみなさんね ブログに書いてある コマンドとか 実行しちゃうでしょ あれ大体間違ってますよ",
-			"みなさん自分が 苦労したこと記事に 書きたくなるでしょ？ 苦労したって事は それはどっか 間違ってんですよ",
+			"sudoなんて邪道ですよ。そんなもんできたことになりません。",
+			"あのねみなさんね ブログに書いてあるコマンドとか実行しちゃうでしょ あれ大体間違ってますよ",
+			"みなさん自分が苦労したこと記事に書きたくなるでしょ？ 苦労したって事はそれはどっか間違ってんですよ",
 			"CMSのコアのソースを読むとか時間の無駄"
 		);
 	}
