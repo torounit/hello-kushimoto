@@ -22,8 +22,8 @@ Class Hello_Kushimoto {
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'add_style' ) );
 		add_action( 'admin_notices', array( $this, 'render' ) );
-
-		add_shortcode( 'kushimoto', array( $this->speaker, 'say' ) );
+		$shortcode_tags = apply_filters( 'hello_kushimoto_shortcode_name', 'kushimoto' );
+		add_shortcode( $shortcode_tags, array( $this->speaker, 'say' ) );
 
 	}
 
@@ -100,8 +100,8 @@ Class Miyasan implements Speaker {
 }
 
 function hello_kushimoto_init() {
-	$miyasan = new Miyasan();
-	new Hello_Kushimoto( $miyasan );
+	$speaker = apply_filters( 'hello_kushimoto_speaker', new Miyasan() );
+	new Hello_Kushimoto( $speaker );
 }
 
 add_action( 'plugins_loaded', 'hello_kushimoto_init' );
