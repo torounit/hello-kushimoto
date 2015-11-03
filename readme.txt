@@ -2,15 +2,17 @@
 Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph, nukaga, marushu
 Requires at least: 4.3
 Tested up to: 4.3
-Stable tag: 1.2
+Stable tag: 1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-これはただのプラグインではありません。このプラグインを有効にすると、すべての管理画面の右上に 伝説上のエンジニア Mr. Kushimoto の名言がランダムに表示されます。
+This is not just a plugin. When activated you will randomly see a Quotations of legendry engineer Mr. M in the upper right of your admin screen on every page.
+
 
 == Description ==
 
-これはただのプラグインではありません。このプラグインを有効にすると、すべての管理画面の右上に 伝説上のエンジニア Mr. Kushimoto の名言がランダムに表示されます。
+This is not just a plugin. When activated you will randomly see a Quotations of legendry engineer Mr. M in the upper right of your admin screen on every page.
+
 
 == Screenshots ==
 

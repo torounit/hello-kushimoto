@@ -2,8 +2,8 @@
 
 /*
 Plugin Name: Hello Kushimoto
-Version: 1.2
-Description: これはただのプラグインではありません。このプラグインを有効にすると、すべての管理画面の右上に 伝説上のエンジニア Mr. Kushimoto の名言がランダムに表示されます。
+Version: 1.3
+Description: This is not just a plugin. When activated you will randomly see a Quotations of legendry engineer Mr. M in the upper right of your admin screen on every page.
 Author: Toro_Unit
 Text Domain: hello-kushimoto
 Domain Path: /languages
