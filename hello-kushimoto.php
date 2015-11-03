@@ -12,6 +12,7 @@ Domain Path: /languages
 
 require "src/class-hello-kushimoto.php";
 require "src/class-hello-kushimoto-speaker.php";
+require "src/class-hello-kushimoto-random-speaker.php";
 require "src/class-miyasan.php";
 
 
