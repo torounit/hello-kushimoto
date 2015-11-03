@@ -5,7 +5,6 @@ Plugin Name: Hello-kushimoto
 Version: 1.0
 Description: これはただのプラグインではありません。
 このプラグインが有効にされると、プラグイン管理画面以外の管理パネルの右上に 伝説上のエンジニア Mr. Kushimoto の名言がランダムに表示されます。
-
 Author: Toro_Unit
 Text Domain: hello-kushimoto
 Domain Path: /languages
@@ -24,7 +23,6 @@ Class Hello_Kushimoto {
 		add_action( 'admin_notices', array( $this, 'render' ) );
 		$shortcode_tags = apply_filters( 'hello_kushimoto_shortcode_name', 'kushimoto' );
 		add_shortcode( $shortcode_tags, array( $this->speaker, 'say' ) );
-
 	}
 
 	/**
@@ -41,7 +39,6 @@ Class Hello_Kushimoto {
 	public function add_style() {
 
 		$x = is_rtl() ? 'left' : 'right';
-
 		$style = "
         #kusimoto {
             float: $x;
@@ -53,10 +50,11 @@ Class Hello_Kushimoto {
         ";
 		wp_add_inline_style( 'wp-admin', $style );
 	}
-
-
 }
 
+/**
+ * Interface Speaker
+ */
 interface Speaker {
 
 	/**
@@ -65,8 +63,15 @@ interface Speaker {
 	public function say();
 }
 
+/**
+ * Class Miyasan
+ */
 Class Miyasan implements Speaker {
 
+	/**
+	 * Miyasan say
+	 * @return mixed
+	 */
 	public function say() {
 		$words = $this->getWords();
 
