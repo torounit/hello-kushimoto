@@ -1,10 +1,9 @@
 <?php
 
 /*
-Plugin Name: Hello-kushimoto
-Version: 1.0
-Description: これはただのプラグインではありません。
-このプラグインが有効にされると、プラグイン管理画面以外の管理パネルの右上に 伝説上のエンジニア Mr. Kushimoto の名言がランダムに表示されます。
+Plugin Name: Hello Kushimoto
+Version: 1.1
+Description: これはただのプラグインではありません。このプラグインを有効にすると、すべての管理画面の右上に 伝説上のエンジニア Mr. Kushimoto の名言がランダムに表示されます。
 Author: Toro_Unit
 Text Domain: hello-kushimoto
 Domain Path: /languages

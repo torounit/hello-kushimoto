@@ -1,18 +1,16 @@
-=== Hello-kushimoto ===
+=== Hello Kushimoto ===
 Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph, nukaga, marushu
 Requires at least: 4.3
 Tested up to: 4.3
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-これはただのプラグインではありません。
-このプラグインが有効にされると、プラグイン管理画面以外の管理パネルの右上に 伝説上のエンジニア Mr. Kushimoto の名言がランダムに表示されます。
+これはただのプラグインではありません。このプラグインを有効にすると、すべての管理画面の右上に 伝説上のエンジニア Mr. Kushimoto の名言がランダムに表示されます。
 
 == Description ==
 
-これはただのプラグインではありません。
-このプラグインが有効にされると、プラグイン管理画面以外の管理パネルの右上に 伝説上のエンジニア Mr. Kushimoto の名言がランダムに表示されます。
+これはただのプラグインではありません。このプラグインを有効にすると、すべての管理画面の右上に 伝説上のエンジニア Mr. Kushimoto の名言がランダムに表示されます。
 
 
 == Installation ==
