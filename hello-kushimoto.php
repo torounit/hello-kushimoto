@@ -98,6 +98,7 @@ Class Miyasan implements Speaker {
 			"なぜそうなるかわかりますか？",
 			"整理できていない知識はないのと同じですよ",
 			"とりあえず何か公開しろ。話はそれからじゃっ！",
+			"つくるのはなんでも作りますｗ（岡本さんがｗ",
 		);
 	}
 
@@ -110,4 +111,3 @@ function hello_kushimoto_init() {
 }
 
 add_action( 'plugins_loaded', 'hello_kushimoto_init' );
-
