@@ -100,7 +100,8 @@ Class Miyasan implements Speaker {
 			"とりあえず何か公開しろ。話はそれからじゃっ！",
 			"オープンソースっぽくない奴はほんとダメ",
 			"すげー、熱烈に握手をもとめられたのでどうしたのかと思ったら、Contact Form 7の作者とまたもや間違えられました",
-			"高速が開通したんだって！大阪まで３時間切るかも！"
+			"高速が開通したんだって！大阪まで３時間切るかも！",
+			"つくるのはなんでも作りますｗ（岡本さんがｗ",
 		);
 	}
 
@@ -113,4 +114,3 @@ function hello_kushimoto_init() {
 }
 
 add_action( 'plugins_loaded', 'hello_kushimoto_init' );
-
