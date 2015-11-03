@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Hello Kushimoto
-Version: 2.0
+Version: 2.0.0
 Description: This is not just a plugin. When activated you will randomly see a Quotations of legendry engineer Mr. M in the upper right of your admin screen on every page.
 Author: Toro_Unit
 Text Domain: hello-kushimoto
