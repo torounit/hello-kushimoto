@@ -2,18 +2,26 @@
 
 /*
 Plugin Name: Hello Kushimoto
-Version: 1.3
+Version: 2.0
 Description: This is not just a plugin. When activated you will randomly see a Quotations of legendry engineer Mr. M in the upper right of your admin screen on every page.
 Author: Toro_Unit
 Text Domain: hello-kushimoto
 Domain Path: /languages
 */
 
+/**
+ * Class Hello_Kushimoto
+ *
+ * plugin core class.
+ */
 Class Hello_Kushimoto {
 
 	/** @var Hello_Kushimoto_Speaker */
 	private $speaker;
 
+	/**
+	 * @param Hello_Kushimoto_Speaker $speaker
+	 */
 	public function __construct( Hello_Kushimoto_Speaker $speaker ) {
 
 		$this->speaker = $speaker;
@@ -78,6 +86,7 @@ Class Miyasan implements Hello_Kushimoto_Speaker {
 	}
 
 	/**
+	 * Dictionary of Mr.M's Quotations.
 	 * @return array
 	 */
 	public function getWords() {
@@ -104,10 +113,12 @@ Class Miyasan implements Hello_Kushimoto_Speaker {
 			"つくるのはなんでも作りますｗ（岡本さんがｗ",
 		);
 	}
-
-
 }
 
+
+/**
+ * run plugin.
+ */
 function hello_kushimoto_init() {
 	$speaker = apply_filters( 'hello_kushimoto_speaker', new Miyasan() );
 	new Hello_Kushimoto( $speaker );
