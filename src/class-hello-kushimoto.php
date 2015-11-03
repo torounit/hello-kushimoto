@@ -36,7 +36,7 @@ class Hello_Kushimoto {
 	 */
 	public function render() {
 		$chosen = $this->speaker->say();
-		echo "<p id='kusimoto'>$chosen</p>";
+		echo "<p class='hello-kusimoto'>$chosen</p>";
 	}
 
 	/**
@@ -46,7 +46,7 @@ class Hello_Kushimoto {
 
 		$x = is_rtl() ? 'left' : 'right';
 		$style = "
-        #kusimoto {
+        .hello-kusimoto {
             float: $x;
             padding-$x: 15px;
             padding-top: 5px;
