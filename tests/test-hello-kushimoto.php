@@ -7,5 +7,6 @@ class Test_Hello_Kushimoto extends WP_UnitTestCase {
 		$words = $miyasan->getWords();
 		$word = do_shortcode( '[kushimoto]' );
 		$this->assertContains( $word, $words );
+		$this->assertNotEmpty( $word );
 	}
 }

@@ -13,6 +13,6 @@ class Test_Miyasan extends WP_UnitTestCase {
 		$miyasan = new Miyasan();
 		$miyasan->say();
 		$this->assertTrue( is_string( $miyasan->say() ) );
-
+		$this->assertNotEmpty( $miyasan->say() );
 	}
 }
