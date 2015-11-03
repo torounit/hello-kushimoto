@@ -28,14 +28,14 @@ class Hello_Kushimoto {
 	 */
 	private function register_shortcode() {
 		$shortcode_tags = apply_filters( 'hello_kushimoto_shortcode_name', 'kushimoto' );
-		add_shortcode( $shortcode_tags, array( $this->speaker, 'say' ) );
+		add_shortcode( $shortcode_tags, array( $this->speaker, 'talk_message' ) );
 	}
 
 	/**
 	 * show text in admin.
 	 */
 	public function render() {
-		$chosen = $this->speaker->say();
+		$chosen = $this->speaker->talk_message();
 		echo "<p class='hello-kusimoto'>$chosen</p>";
 	}
 

@@ -3,21 +3,19 @@
 /**
  * Class Miyasan
  */
-class Miyasan implements Hello_Kushimoto_Speaker {
+class Miyasan extends Hello_Kushimoto_Random_Speaker {
+
 
 	/**
-	 * Miyasan say
-	 * @return mixed
+	 * @return String
 	 */
 	public function say() {
-		$words = $this->getWords();
-
-		return $words[ array_rand( $words ) ];
+		return apply_filters( 'miyasan_say', parent::say() );
 	}
 
 	/**
 	 * Dictionary of Mr.M's Quotations.
-	 * @return array
+	 * @return String[]
 	 */
 	public function getWords() {
 		return array(
