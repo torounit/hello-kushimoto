@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Hello Kushimoto
-Version: 1.1
+Version: 1.2
 Description: これはただのプラグインではありません。このプラグインを有効にすると、すべての管理画面の右上に 伝説上のエンジニア Mr. Kushimoto の名言がランダムに表示されます。
 Author: Toro_Unit
 Text Domain: hello-kushimoto
