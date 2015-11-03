@@ -19,6 +19,14 @@ class Hello_Kushimoto {
 
 		add_action( 'admin_enqueue_scripts', array( $this, 'add_style' ) );
 		add_action( 'admin_notices', array( $this, 'render' ) );
+
+		$this->register_shortcode();
+	}
+
+	/**
+	 * register shortcode [kushimoto]
+	 */
+	private function register_shortcode() {
 		$shortcode_tags = apply_filters( 'hello_kushimoto_shortcode_name', 'kushimoto' );
 		add_shortcode( $shortcode_tags, array( $this->speaker, 'say' ) );
 	}
