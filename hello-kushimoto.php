@@ -11,10 +11,10 @@ Domain Path: /languages
 
 Class Hello_Kushimoto {
 
-	/** @var Speaker */
+	/** @var Hello_Kushimoto_Speaker */
 	private $speaker;
 
-	public function __construct( Speaker $speaker ) {
+	public function __construct( Hello_Kushimoto_Speaker $speaker ) {
 
 		$this->speaker = $speaker;
 
@@ -52,9 +52,9 @@ Class Hello_Kushimoto {
 }
 
 /**
- * Interface Speaker
+ * Interface Hello_Kushimoto_Speaker
  */
-interface Speaker {
+interface Hello_Kushimoto_Speaker {
 
 	/**
 	 * @return string
@@ -65,7 +65,7 @@ interface Speaker {
 /**
  * Class Miyasan
  */
-Class Miyasan implements Speaker {
+Class Miyasan implements Hello_Kushimoto_Speaker {
 
 	/**
 	 * Miyasan say
