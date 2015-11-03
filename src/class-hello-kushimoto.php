@@ -53,7 +53,7 @@ class Hello_Kushimoto {
             padding-right: 70px;
             margin: 0;
             font-size: 11px;
-            background: #fff url("https://avatars0.githubusercontent.com/u/309946?v=3&s=50") no-repeat;
+            background: #fff url('https://avatars0.githubusercontent.com/u/309946?v=3&s=50') no-repeat;
             color: #444;
             border: 1px solid #E5E5E5;
             border-radius: 1px;
