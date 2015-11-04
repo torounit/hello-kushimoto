@@ -21,6 +21,7 @@ mkdir build
 
 cd build
 svn co $PLUGIN_REPO
+svn update
 git clone $GH_REF $(basename $PLUGIN_REPO)/git
 
 cd $(basename $PLUGIN_REPO)
