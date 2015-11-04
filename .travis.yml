@@ -11,8 +11,7 @@ php:
   - hhvm
 
 env:
-  - WP_VERSION=4.3.1 WP_MULTISITE=0
-  - WP_VERSION=4.3.1 WP_MULTISITE=1
+
 
 matrix:
  include:
@@ -27,6 +26,10 @@ script: phpunit
 after_success: bash bin/deploy.sh
 
 env:
+  matrix:
+  - WP_VERSION=4.3.1 WP_MULTISITE=0
+  - WP_VERSION=4.3.1 WP_MULTISITE=1
+
   global:
   - PLUGIN_REPO: https://plugins.svn.wordpress.org/hello-kushimoto/
   - GH_REF: https://github.com/torounit/hello-kushimoto.git
