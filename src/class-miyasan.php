@@ -7,6 +7,7 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 
 
 	/**
+	 * apply original filter say method.
 	 * @return String
 	 */
 	public function say() {
