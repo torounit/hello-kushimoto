@@ -12,6 +12,11 @@ if [[ ! $TRAVIS_TAG ]]; then
 	exit
 fi
 
+if [[ ! $WP_PULUGIN_DEPLOY ]]; then
+	echo "Not deploying."
+	exit
+fi
+
 mkdir build
 
 cd build
@@ -20,6 +25,7 @@ git clone $GH_REF $(basename $PLUGIN_REPO)/git
 
 cd $(basename $PLUGIN_REPO)
 rsync -avz git/ trunk/
+rm -fr git
 
 echo ".DS_Store
 .git
@@ -33,7 +39,6 @@ _site
 bin
 composer.json
 composer.lock
-git
 gulpfile.js
 node_modules
 npm-debug.log
