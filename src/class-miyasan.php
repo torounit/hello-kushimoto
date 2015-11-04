@@ -17,7 +17,7 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 	 * Dictionary of Mr.M's Quotations.
 	 * @return String[]
 	 */
-	public function getWords() {
+	public function get_words() {
 		return array(
 			'台風中継でおなじみの和歌山県串本町から来ました。',
 			'お客さんから不吉なメールが来た。見なかったことにしよう。。。',

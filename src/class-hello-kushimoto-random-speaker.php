@@ -13,7 +13,7 @@ abstract class Hello_Kushimoto_Random_Speaker extends Hello_Kushimoto_Speaker {
 	 * @return String
 	 */
 	public function say() {
-		$words = $this->getWords();
+		$words = $this->get_words();
 
 		$word =  $words[ array_rand( $words ) ];
 		return apply_filters( 'miyasan_say', $word );
@@ -22,6 +22,6 @@ abstract class Hello_Kushimoto_Random_Speaker extends Hello_Kushimoto_Speaker {
 	/**
 	 * @return String[]
 	 */
-	abstract public function getWords();
+	abstract public function get_words();
 
 }
