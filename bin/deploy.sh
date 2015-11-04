@@ -13,8 +13,38 @@ if [[ ! $TRAVIS_TAG ]]; then
 fi
 
 mkdir build
+
 cd build
 svn co $PLUGIN_REPO
 git clone $GH_REF $(basename $PLUGIN_REPO)/git
 
-rsync -avz $(basename $PLUGIN_REPO)/git/ $(basename $PLUGIN_REPO)/trunk/
+cd $(basename $PLUGIN_REPO)
+rsync -avz git/ trunk/
+
+echo ".DS_Store
+.git
+.gitignore
+.travis.yml
+Gruntfile.js
+LINGUAS
+Makefile
+README.md
+_site
+bin
+composer.json
+composer.lock
+git
+gulpfile.js
+node_modules
+npm-debug.log
+package.json
+phpunit.xml
+tests" > .svnignore
+
+svn propset svn:ignore -F .svnignore trunk/
+svn st | grep '^!' | sed -e 's/\![ ]*/svn del /g' | sh
+svn st | grep '^?' | sed -e 's/\?[ ]*/svn add /g' | sh
+
+svn cp trunk tags/$TRAVIS_TAG
+
+svn st # test
