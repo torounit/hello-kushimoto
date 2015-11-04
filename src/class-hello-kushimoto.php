@@ -54,6 +54,7 @@ class Hello_Kushimoto {
         			font-size: 11px;
         		}
         		";
-		wp_add_inline_style( 'wp-admin', $style );
+        	
+		wp_add_inline_style( 'wp-admin', apply_filters( 'hello_kushimoto_style', $style ) );
 	}
 }
