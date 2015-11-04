@@ -12,4 +12,9 @@ if [[ ! $TRAVIS_TAG ]]; then
 	exit
 fi
 
-echo $TRAVIS_TAG;
+mkdir build
+cd build
+svn co $PLUGIN_REPO
+git clone $GH_REF $(basename $PLUGIN_REPO)/git
+
+rsync -avz $(basename $PLUGIN_REPO)/git/ $(basename $PLUGIN_REPO)/trunk/
