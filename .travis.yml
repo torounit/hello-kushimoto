@@ -18,6 +18,13 @@ matrix:
       env: WP_VERSION=latest WP_MULTISITE=1
 
 before_script:
-  - bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION 
+  - bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
 
 script: phpunit
+
+after_success: bash bin/deploy.sh
+
+env:
+  global:
+  - GH_REF: https://plugins.svn.wordpress.org/hello-kushimoto/
+  - secure: xKRj9ob1fao2vkdIHBjgZizz7oPE7dDVzY2hTkK4qZv+f5fjQJObxdGNVFuaBhRMFmEDWM37O64z2hmpLNhLc7COjoM/U+MjZ+ITcXIjk+BC12SRBxfc7WYHCj3tr88Yvg/df2F62tXniRKKsCA3/n5UfGEGU23BTIKcX0JddgECog1vcifpK7MXWGwTZgm4n/QG8uHdKUweb/bvQBv6Lghalg3l22/kxSFLLFCWc7kTKzGoS7hhAjAeiBAAjJOafba2aUWiHLJZjBWkrw4JvCQN09k3gey3sjDqpsfDC9qWOLtpm5u/PxRKbUEsEgb7z50GlEPuo3ieCaGgaGvlEqFVFsuQUfHvYhd2wy5VKavBi1UaIC9Q464W6jre1ZLapwdmTCmxUI/igznWPoX3Zkdw+bBsp4wWa/dgL/WJtP8DDaghBVNxvkeBWgBZWp6PaEp2TM+O7xb1Z7efYB6cqpUCoAF5fjGNifBkZ8hPlN0YKTT+73PpBIcCl82m0Qkxjng+OXQBQPW3RLxtbjAR4bSjlr6MNt4k8UygyaBdvK+Bpj38NWx9u7Zlo54omFivoHMpzXKKvUKfOYK5BhHDLCkJVqjdRS7RyeMDb4ZXbmHxuhQdjE4K91yYJhOGBEx0bMYCHm8flChrHpxFP5KAknTrM7phfKLHgBIm4NC/rvw=
