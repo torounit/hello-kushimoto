@@ -1,11 +1,12 @@
 <?php
 
-class KushimotoTest extends WP_UnitTestCase {
+class Test_Hello_Kushimoto extends WP_UnitTestCase {
 
 	public function test_shortcode() {
 		$miyasan = new Miyasan();
-		$words = $miyasan->getWords();
+		$words = $miyasan->get_words();
 		$word = do_shortcode( '[kushimoto]' );
 		$this->assertContains( $word, $words );
+		$this->assertNotEmpty( $word );
 	}
 }
