@@ -46,14 +46,14 @@ class Hello_Kushimoto {
 
 		$x = is_rtl() ? 'left' : 'right';
 		$style = "
-        .hello-kushimoto {
-            float: $x;
-            padding-$x: 15px;
-            padding-top: 5px;
-            margin: 0;
-            font-size: 11px;
-        }
-        ";
+        		.hello-kushimoto {
+            			float: $x;
+        			padding-$x: 15px;
+        			padding-top: 5px;
+        			margin: 0;
+        			font-size: 11px;
+        		}
+        		";
 		wp_add_inline_style( 'wp-admin', $style );
 	}
 }
