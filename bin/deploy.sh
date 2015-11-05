@@ -53,5 +53,5 @@ svn st | grep '^?' | sed -e 's/\?[ ]*/svn add /g' | sh
 svn cp trunk tags/$TRAVIS_TAG
 
 svn st # test
-svn commit -m "commit version $TRAVIS_TAG" --username $SVN_USER --password $SVN_PASS --non-interactive
+svn commit -m "commit version $TRAVIS_TAG" --username $SVN_USER --password $SVN_PASS --non-interactive 2>/dev/null
 
