@@ -8,11 +8,20 @@ notifications:
 php:
   - 5.3
   - 5.6
+  - 7
+  - hhvm
 
 matrix:
  include:
    - php: 5.3
      env: WP_VERSION=latest WP_MULTISITE=0 WP_PULUGIN_DEPLOY=1
+ allow_failures:
+  - php: hhvm
+  - env:
+    - WP_VERSION=trunk WP_MULTISITE=0
+    - WP_VERSION=trunk WP_MULTISITE=1
+
+
 
 before_script:
   - bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
@@ -25,6 +34,8 @@ env:
   matrix:
     - WP_VERSION=4.3.1 WP_MULTISITE=0
     - WP_VERSION=4.3.1 WP_MULTISITE=1
+    - WP_VERSION=trunk WP_MULTISITE=0
+    - WP_VERSION=trunk WP_MULTISITE=1
 
   global:
     - SVN_REPO: https://plugins.svn.wordpress.org/hello-kushimoto/
