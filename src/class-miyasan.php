@@ -5,13 +5,26 @@
  */
 class Miyasan extends Hello_Kushimoto_Random_Speaker {
 
+	/**
+	 * @var string NickName
+	 */
+	protected $name = 'mr-m';
+
+	/**
+	 * apply original filter whoami method
+	 * @return string
+	 */
+	public function whoami() {
+		return (string) apply_filters( 'miyasan_name', parent::whoami() );
+	}
+
 
 	/**
 	 * apply original filter say method.
 	 * @return String
 	 */
 	public function say() {
-		return apply_filters( 'miyasan_say', parent::say() );
+		return (string) apply_filters( 'miyasan_say', parent::say() );
 	}
 
 	/**
