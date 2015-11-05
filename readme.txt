@@ -1,5 +1,5 @@
 === Hello Kushimoto ===
-Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph, nukaga, marushu, show-ko
+Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph, nukaga, marushu, show-ko, aka
 Tags: wctokyo,kushimoto
 Requires at least: 4.3
 Tested up to: 4.3
