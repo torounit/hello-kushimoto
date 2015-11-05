@@ -36,7 +36,7 @@ class Hello_Kushimoto {
 	 */
 	public function render() {
 		$chosen = $this->speaker->talk_message();
-		echo "<p class='hello-kusimoto'>$chosen</p>";
+		echo "<p class='hello-kushimoto'>$chosen</p>";
 	}
 
 	/**
@@ -46,14 +46,15 @@ class Hello_Kushimoto {
 
 		$x = is_rtl() ? 'left' : 'right';
 		$style = "
-        .hello-kusimoto {
-            float: $x;
-            padding-$x: 15px;
-            padding-top: 5px;
-            margin: 0;
-            font-size: 11px;
-        }
-        ";
-		wp_add_inline_style( 'wp-admin', $style );
+        		.hello-kushimoto {
+            			float: $x;
+        			padding-$x: 15px;
+        			padding-top: 5px;
+        			margin: 0;
+        			font-size: 11px;
+        		}
+        		";
+        	
+		wp_add_inline_style( 'wp-admin', apply_filters( 'hello_kushimoto_style', $style ) );
 	}
 }

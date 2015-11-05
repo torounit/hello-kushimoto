@@ -7,17 +7,26 @@ notifications:
 
 php:
   - 5.3
-  - 5.5
-
-env:
-  - WP_VERSION=latest WP_MULTISITE=0
+  - 5.6
 
 matrix:
-  include:
-    - php: 5.3
-      env: WP_VERSION=latest WP_MULTISITE=1
+ include:
+   - php: 5.3
+     env: WP_VERSION=latest WP_MULTISITE=0 WP_PULUGIN_DEPLOY=1
 
 before_script:
-  - bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION 
+  - bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
 
 script: phpunit
+
+after_success: bash bin/deploy.sh
+
+env:
+  matrix:
+    - WP_VERSION=4.3.1 WP_MULTISITE=0
+    - WP_VERSION=4.3.1 WP_MULTISITE=1
+
+  global:
+    - SVN_REPO: https://plugins.svn.wordpress.org/hello-kushimoto/
+    - GH_REF: https://github.com/torounit/hello-kushimoto.git
+    - secure: "mSCIAi4MQSjBjvplqEdczUatEoF4kQukxPDkRj9zDBH6pWL51utlNGJBpFXKR9gNtje92jQx62rRtsodBbeUjiE75TaUfMN0cmWtP7lw1eB4uooTgBuotJ6FXtgQiWrLiOy+0xIR9CpFJGj6LRZ+2sMxjxW0N+TrCCgI2aCsClXHCY8yPDBHqIQwn6En4s+bvTBXMmJotOD3E92/mgnROJOHYjoD6PozMdcg+Gyo5ju2F3j+Jg0f66z03xx5aqt4r4RYS5V8Np3lx1osiH+H7v8+yP3rEg+hv6Sts/V8lEYQCTyTanGtMLPej1il8revcqcJUpTbrWLwg3IwWAmEJvjGUMGptebAOVg9VbVOsI1Iwake4ZpX+nzZw4MgoxjO3LGFj5xTekWRyCDUyeDkwIkxWlGSwML4n8rqIuZ1hr/Aaw9R5RvuHxbk7ha12tFEgB20IZpIsAEQzzRX7ENGQh4Z8uNHY2MeW2NFXbmCYVltSZKiAcF0N+PV/y7I91QUvVx4EM/Q8DQkvPzAeC3c7TMnx1+ekiSG5S5AnbvtWrTHfd9b08Up+29z6kl65ubzP5g5nDdVdUqbiUj1+njTHT8OoGIUsfyFmifKZ+jqRK+1zjRVCASV9/ObCEug2V2uh2VzueVk7LqLGLkTbEbQjRVPg2L3E+r8uWoKcIZSsuM="

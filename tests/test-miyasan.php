@@ -2,9 +2,9 @@
 
 class Test_Miyasan extends WP_UnitTestCase {
 
-	public function test_getwords() {
+	public function test_get_words() {
 		$miyasan = new Miyasan();
-		$words = $miyasan->getWords();
+		$words = $miyasan->get_words();
 		$this->assertTrue( is_array( $words ) );
 
 	}
