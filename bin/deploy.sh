@@ -17,15 +17,26 @@ if [[ ! $WP_PULUGIN_DEPLOY ]]; then
 	exit
 fi
 
+if [[ ! $SVN_REPO || ! $GH_REF ]]; then
+	echo "Please set \$GH_REF and \$PLUGIN_REPO in .travis.yml."
+	exit
+fi
+
 mkdir build
 
 cd build
-svn co $PLUGIN_REPO
-git clone $GH_REF $(basename $PLUGIN_REPO)/git
+svn co $SVN_REPO
+git clone $GH_REF $(basename $SVN_REPO)/git
 
-cd $(basename $PLUGIN_REPO)
-rsync -avz git/ trunk/
-rm -fr git
+cd $(basename $SVN_REPO)
+SVN_ROOT_DIR=$(pwd)
+
+rsync -avz $SVN_ROOT_DIR/git/ $SVN_ROOT_DIR/trunk/
+rm -fr $SVN_ROOT_DIR/git
+
+cd $SVN_ROOT_DIR/trunk
+bash bin/build.sh
+cd $SVN_ROOT_DIR
 
 echo ".DS_Store
 .git
@@ -46,12 +57,14 @@ package.json
 phpunit.xml
 tests" > .svnignore
 
+svn propset -R svn:ignore -F .svnignore .
+
 svn propset svn:ignore -F .svnignore trunk/
 svn st | grep '^!' | sed -e 's/\![ ]*/svn del /g' | sh
 svn st | grep '^?' | sed -e 's/\?[ ]*/svn add /g' | sh
 
 svn cp trunk tags/$TRAVIS_TAG
 
-svn st # test
-svn commit -m "commit version $TRAVIS_TAG" --username $SVN_USER --password $SVN_PASS --non-interactive 2>/dev/null
-
+if [[ $SVN_USER && $SVN_PASS ]]; then
+	svn commit -q -m "commit version $TRAVIS_TAG" --username $SVN_USER --password $SVN_PASS --non-interactive 2>/dev/null
+fi
