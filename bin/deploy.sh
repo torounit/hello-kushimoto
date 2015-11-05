@@ -17,7 +17,7 @@ if [[ ! $WP_PULUGIN_DEPLOY ]]; then
 	exit
 fi
 
-if [[ ! $PLUGIN_REPO || ! $GH_REF ]]; then
+if [[ ! $SVN_REPO || ! $GH_REF ]]; then
 	echo "Please set \$GH_REF and \$PLUGIN_REPO in .travis.yml."
 	exit
 fi
@@ -25,8 +25,8 @@ fi
 mkdir build
 
 cd build
-svn co $PLUGIN_REPO
-git clone $GH_REF $(basename $PLUGIN_REPO)/git
+svn co $SVN_REPO
+git clone $GH_REF $(basename $SVN_REPO)/git
 
 cd $(basename $SVN_REPO)
 rsync -avz git/ trunk/
