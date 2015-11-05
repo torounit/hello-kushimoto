@@ -3,7 +3,7 @@
 /*
 Plugin Name: Hello Kushimoto
 Plugin URI: https://github.com/torounit/hello-kushimoto/
-Version: 2.1.10
+Version: 2.1.11
 Description: This is not just a plugin. When activated you will randomly see a Quotations of legendry engineer Mr. M in the upper right of your admin screen on every page.
 Author: Toro_Unit
 Author URI: https://github.com/torounit/
