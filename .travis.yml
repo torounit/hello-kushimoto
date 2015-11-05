@@ -17,9 +17,8 @@ matrix:
      env: WP_VERSION=latest WP_MULTISITE=0 WP_PULUGIN_DEPLOY=1
  allow_failures:
   - php: hhvm
-  - env:
-    - WP_VERSION=trunk WP_MULTISITE=0
-    - WP_VERSION=trunk WP_MULTISITE=1
+  - env: WP_VERSION=trunk WP_MULTISITE=0
+  - env: WP_VERSION=trunk WP_MULTISITE=1
 
 
 
