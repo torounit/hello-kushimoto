@@ -19,6 +19,7 @@ class Test_Miyasan extends WP_UnitTestCase {
 	public function test_name() {
 		$miyasan = new Miyasan();
 		$name    = $miyasan->whoami();
-		$this->assertEquals( $name, 'mr-m' );
+		$this->assertTrue( is_string( $name ) );
+		$this->assertRegExp( '/-?[_a-zA-Z]+[_a-zA-Z0-9-]*/', $name );
 	}
 }
