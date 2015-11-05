@@ -29,8 +29,14 @@ svn co $SVN_REPO
 git clone $GH_REF $(basename $SVN_REPO)/git
 
 cd $(basename $SVN_REPO)
-rsync -avz git/ trunk/
-rm -fr git
+SVN_ROOT_DIR=$(pwd)
+
+rsync -avz $SVN_ROOT_DIR/git/ $SVN_ROOT_DIR/trunk/
+rm -fr $SVN_ROOT_DIR/git
+
+cd $SVN_ROOT_DIR/trunk
+bash bin/build.sh
+cd $SVN_ROOT_DIR
 
 echo ".DS_Store
 .git
@@ -56,10 +62,6 @@ svn propset -R svn:ignore -F .svnignore .
 svn propset svn:ignore -F .svnignore trunk/
 svn st | grep '^!' | sed -e 's/\![ ]*/svn del /g' | sh
 svn st | grep '^?' | sed -e 's/\?[ ]*/svn add /g' | sh
-
-cd trunk
-bash bin/build.sh
-cd ..
 
 svn cp trunk tags/$TRAVIS_TAG
 
