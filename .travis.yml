@@ -10,13 +10,15 @@ php:
   - 5.6
   - hhvm
 
-env:
-
 
 matrix:
  include:
    - php: 5.3
      env: WP_VERSION=latest WP_MULTISITE=0 WP_PULUGIN_DEPLOY=1
+   - php: 5.6
+     env:
+       - WP_VERSION=4.3.1 WP_MULTISITE=0
+       - WP_VERSION=4.3.1 WP_MULTISITE=1
 
 before_script:
   - bash bin/install-wp-tests.sh wordpress_test root '' localhost $WP_VERSION
@@ -26,9 +28,6 @@ script: phpunit
 after_success: bash bin/deploy.sh
 
 env:
-  - WP_VERSION=4.3.1 WP_MULTISITE=0
-  - WP_VERSION=4.3.1 WP_MULTISITE=1
-
   global:
     - PLUGIN_REPO: https://plugins.svn.wordpress.org/hello-kushimoto/
     - GH_REF: https://github.com/torounit/hello-kushimoto.git
