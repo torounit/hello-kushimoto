@@ -39,6 +39,7 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 			'すげー、熱烈に握手をもとめられたのでどうしたのかと思ったら、Contact Form 7の作者とまたもや間違えられました',
 			'高速が開通したんだって！大阪まで３時間切るかも！',
 			'つくるのはなんでも作りますｗ（岡本さんがｗ',
+			'I\'m fake Takayuki',
 		);
 	}
 }
