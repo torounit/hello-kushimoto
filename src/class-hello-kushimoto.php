@@ -21,6 +21,7 @@ class Hello_Kushimoto {
 		add_action( 'admin_notices', array( $this, 'render' ) );
 
 		$this->register_shortcode();
+		new Hello_Kushimoto_Dashboard_Widget( $speaker );
 	}
 
 	/**
