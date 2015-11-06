@@ -8,14 +8,14 @@ class Hello_Kushimoto_Dashboard_Widget {
 	public function __construct( Hello_Kushimoto_Speaker $speaker ) {
 
 		$this->speaker = $speaker;
-		add_action( 'wp_dashboard_setup', [ $this, 'setup' ] );
+		add_action( 'wp_dashboard_setup', array( $this, 'setup' ) );
 	}
 
 	public function setup() {
 		wp_add_dashboard_widget(
 			'hello_kushimoto_widget',
 			'Hello Kushimoto Widget',
-			[ $this, 'render' ]
+			array( $this, 'render' )
 		);
 	}
 
