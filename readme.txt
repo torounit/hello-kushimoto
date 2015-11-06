@@ -1,5 +1,5 @@
 === Hello Kushimoto ===
-Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph, nukaga, marushu, show-ko, aka
+Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph, nukaga, marushu, show-ko, aka, mayukojpn
 Tags: wctokyo,kushimoto
 Requires at least: 4.3
 Tested up to: 4.3
@@ -35,4 +35,3 @@ This is not just a plugin. When activated you will randomly see a Quotations of 
 
 = 1.0 =
 * first release.
-

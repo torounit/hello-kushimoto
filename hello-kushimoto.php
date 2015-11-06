@@ -24,6 +24,7 @@ require "src/class-miyasan.php";
 function hello_kushimoto_init() {
 	$speaker = apply_filters( 'hello_kushimoto_speaker', new Miyasan() );
 	new Hello_Kushimoto( $speaker );
+	load_plugin_textdomain( 'hello-kushimoto', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
 }
 
 add_action( 'plugins_loaded', 'hello_kushimoto_init' );
