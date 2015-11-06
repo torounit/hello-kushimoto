@@ -63,6 +63,9 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 			'すぐにsudoしたら？って言うエンジニアは信用しちゃいけません。',
 			'串本の海？台風の後に犬の散歩してると、サメが打ち上げられたりしてますね。',
 			'I\'m fake Takayuki',
+			'DMで質問をいただいても回答できないので、GitHubのIssueに書いていただけると助かります。', 
+			'FTPなんてまだあるのか。。。',
+			'プルリクエストありがとうございます！',
 		);
 	}
 }
