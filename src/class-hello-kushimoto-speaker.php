@@ -8,6 +8,11 @@ abstract class Hello_Kushimoto_Speaker {
 	/**
 	 * @return string
 	 */
+	abstract public function whoami();
+
+	/**
+	 * @return string
+	 */
 	abstract public function say();
 
 	/**

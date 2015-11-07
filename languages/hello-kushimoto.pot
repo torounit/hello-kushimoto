@@ -1,0 +1,189 @@
+# Copyright (C) 2015 Hello Kushimoto
+# This file is distributed under the same license as the Hello Kushimoto package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Hello Kushimoto 2.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/hello-kushimoto\n"
+"POT-Creation-Date: 2015-11-06 10:48:57+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: src/class-miyasan.php:36
+msgid "台風中継でおなじみの和歌山県串本町から来ました。"
+msgstr ""
+
+#: src/class-miyasan.php:37
+msgid "お客さんから不吉なメールが来た。見なかったことにしよう。。。"
+msgstr ""
+
+#: src/class-miyasan.php:38
+msgid ""
+"めんどくさい案件を全部断って楽な案件だけを求め続けてたらいつのまにか串本に住"
+"んでました。"
+msgstr ""
+
+#: src/class-miyasan.php:39
+msgid "え？まだMAMPで消耗してるの？"
+msgstr ""
+
+#: src/class-miyasan.php:40
+msgid "え？まだこれからもMAMPで消耗してるの？"
+msgstr ""
+
+#: src/class-miyasan.php:41
+msgid "Windowsはガン無視です 笑"
+msgstr ""
+
+#: src/class-miyasan.php:42
+msgid ""
+"sudoならインストールできた？ だめですよそんなのずっとsudoですることになります"
+"よ？"
+msgstr ""
+
+#: src/class-miyasan.php:43
+msgid "sudoなんて邪道ですよ。そんなもんできたことになりません。"
+msgstr ""
+
+#: src/class-miyasan.php:44
+msgid ""
+"あのねみなさんね ブログに書いてあるコマンドとか実行しちゃうでしょ あれ大体間"
+"違ってますよ"
+msgstr ""
+
+#: src/class-miyasan.php:45
+msgid ""
+"みなさん自分が苦労したこと記事に書きたくなるでしょ？ 苦労したって事はそれは"
+"どっか間違ってんですよ"
+msgstr ""
+
+#: src/class-miyasan.php:46
+msgid "CMSのコアのソースを読むとか時間の無駄"
+msgstr ""
+
+#: src/class-miyasan.php:47
+msgid "お見積依頼ですか？"
+msgstr ""
+
+#: src/class-miyasan.php:48
+msgid "それプルリクください"
+msgstr ""
+
+#: src/class-miyasan.php:49
+msgid "プルリクお待ちしてます!"
+msgstr ""
+
+#: src/class-miyasan.php:50
+msgid "なぜそうなるかわかりますか？"
+msgstr ""
+
+#: src/class-miyasan.php:51
+msgid "整理できていない知識はないのと同じですよ"
+msgstr ""
+
+#: src/class-miyasan.php:52
+msgid "とりあえず何か公開しろ。話はそれからじゃっ！"
+msgstr ""
+
+#: src/class-miyasan.php:53
+msgid "オープンソースっぽくない奴はほんとダメ"
+msgstr ""
+
+#: src/class-miyasan.php:54
+msgid ""
+"すげー、熱烈に握手をもとめられたのでどうしたのかと思ったら、Contact Form 7の"
+"作者とまたもや間違えられました"
+msgstr ""
+
+#: src/class-miyasan.php:55
+msgid "高速が開通したんだって！大阪まで３時間切るかも！"
+msgstr ""
+
+#: src/class-miyasan.php:56
+msgid "つくるのはなんでも作りますｗ（岡本さんがｗ"
+msgstr ""
+
+#: src/class-miyasan.php:57
+msgid "仕事や！ 行ってこい！"
+msgstr ""
+
+#: src/class-miyasan.php:58
+msgid ""
+"まじに楽しいのになー。自分が使いたい物を大っぴらに作って放置しとくだけで世界"
+"がどれだけ広がるか。"
+msgstr ""
+
+#: src/class-miyasan.php:59
+msgid "自慢じゃないですが、1日で作りました。（自慢ですけど）"
+msgstr ""
+
+#: src/class-miyasan.php:60
+msgid "え？そんなんできたうちに入りませんよ。rootに変わるなんてうんこです。"
+msgstr ""
+
+#: src/class-miyasan.php:61
+msgid "MAMPなんてアンインストールしちゃえばいいんですよ。"
+msgstr ""
+
+#: src/class-miyasan.php:62
+msgid "世界は変化してるんです。半年前はそんなのありませんでした。"
+msgstr ""
+
+#: src/class-miyasan.php:63
+msgid "すぐにsudoしたら？って言うエンジニアは信用しちゃいけません。"
+msgstr ""
+
+#: src/class-miyasan.php:64
+msgid ""
+"串本の海？台風の後に犬の散歩してると、サメが打ち上げられたりしてますね。"
+msgstr ""
+
+#: src/class-miyasan.php:65
+msgid ""
+"こころが汚いみなさんには見えないと思うけど、今日の串本の星空はめっちゃきれ"
+"い！"
+msgstr ""
+
+#: src/class-miyasan.php:66
+msgid "I'm fake Takayuki"
+msgstr ""
+
+#: src/class-miyasan.php:67
+msgid ""
+"DMで質問をいただいても回答できないので、GitHubのIssueに書いていただけると助か"
+"ります。"
+msgstr ""
+
+#: src/class-miyasan.php:68
+msgid "FTPなんてまだあるのか。。。"
+msgstr ""
+
+#: src/class-miyasan.php:69
+msgid "プルリクエストありがとうございます！"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Hello Kushimoto"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/torounit/hello-kushimoto/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This is not just a plugin. When activated you will randomly see a Quotations "
+"of legendry engineer Mr. M in the upper right of your admin screen on every "
+"page."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Toro_Unit"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/torounit/"
+msgstr ""

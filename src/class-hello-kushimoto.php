@@ -36,7 +36,8 @@ class Hello_Kushimoto {
 	 */
 	public function render() {
 		$chosen = $this->speaker->talk_message();
-		echo "<p class='hello-kushimoto'>$chosen</p>";
+		$name   = $this->speaker->whoami();
+		echo "<p class='hello-kushimoto speaker-$name'>$chosen</p>";
 	}
 
 	/**
