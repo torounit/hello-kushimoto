@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Hello Kushimoto\n"
+"POT-Creation-Date: 2015-11-06 23:44+0900\n"
+"PO-Revision-Date: 2015-11-07 10:41+0900\n"
+"Last-Translator: aka <plastiktraume@gmail.com>\n"
+"Language-Team: aka <plastiktraume@gmail.com>\n"
+"Language: ja_JP\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: hello-kushimoto.php\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. Plugin Name of the plugin/theme
+msgid "Hello Kushimoto"
+msgstr "こんにちは串本"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/torounit/hello-kushimoto/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"This is not just a plugin. When activated you will randomly see a Quotations "
+"of legendry engineer Mr. M in the upper right of your admin screen on every "
+"page."
+msgstr ""
+"これは単なるプラグインではありません。一度有効化すると串本在住の伝説のエンジ"
+"ニア Mr M の名言を管理画面の右上にお届けします。"
+
+#. Author of the plugin/theme
+msgid "Toro_Unit"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/torounit/"
+msgstr ""

@@ -2,13 +2,17 @@
 # This file is distributed under the same license as the Hello Kushimoto package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-11-06 06:29:50+0000\n"
+"PO-Revision-Date: 2015-11-07 18:49+0900\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/1.0-alpha-1100\n"
+"X-Generator: Poedit 1.8.6\n"
 "Project-Id-Version: Hello Kushimoto\n"
+"POT-Creation-Date: \n"
+"Last-Translator: aka <plastiktraume@gmail.com>\n"
+"Language-Team: \n"
+"Language: en_US\n"
 
 #: src/class-miyasan.php:42
 msgid "sudoならインストールできた？ だめですよそんなのずっとsudoですることになりますよ？"
@@ -28,7 +32,7 @@ msgstr ""
 
 #: src/class-miyasan.php:46
 msgid "CMSのコアのソースを読むとか時間の無駄"
-msgstr ""
+msgstr "You’re reading core source of CMS? Nice hobby to waste your time."
 
 #: src/class-miyasan.php:47
 msgid "お見積依頼ですか？"
@@ -36,15 +40,15 @@ msgstr ""
 
 #: src/class-miyasan.php:48
 msgid "それプルリクください"
-msgstr ""
+msgstr "Cool! Could you create pull request?"
 
 #: src/class-miyasan.php:49
 msgid "プルリクお待ちしてます!"
-msgstr ""
+msgstr "I’m waiting for your pull requests."
 
 #: src/class-miyasan.php:50
 msgid "なぜそうなるかわかりますか？"
-msgstr ""
+msgstr "Do you understand why it works?"
 
 #: src/class-miyasan.php:51
 msgid "整理できていない知識はないのと同じですよ"
@@ -52,11 +56,11 @@ msgstr ""
 
 #: src/class-miyasan.php:52
 msgid "とりあえず何か公開しろ。話はそれからじゃっ！"
-msgstr ""
+msgstr "Publish it NOW! That makes your first step."
 
 #: src/class-miyasan.php:53
 msgid "オープンソースっぽくない奴はほんとダメ"
-msgstr ""
+msgstr "The guy without Open Source Software is crap."
 
 #: src/class-miyasan.php:54
 msgid "すげー、熱烈に握手をもとめられたのでどうしたのかと思ったら、Contact Form 7の作者とまたもや間違えられました"
@@ -68,11 +72,11 @@ msgstr ""
 
 #: src/class-miyasan.php:56
 msgid "つくるのはなんでも作りますｗ（岡本さんがｗ"
-msgstr ""
+msgstr "Any order are welcome (Mr Okamoto built them ;-) )."
 
 #: src/class-miyasan.php:57
 msgid "仕事や！ 行ってこい！"
-msgstr ""
+msgstr "Go ahead! Working time!"
 
 #: src/class-miyasan.php:58
 msgid "まじに楽しいのになー。自分が使いたい物を大っぴらに作って放置しとくだけで世界がどれだけ広がるか。"
@@ -108,7 +112,7 @@ msgstr ""
 
 #: src/class-miyasan.php:66
 msgid "I'm fake Takayuki"
-msgstr ""
+msgstr "I'm fake Takayuki"
 
 #: src/class-miyasan.php:67
 msgid "DMで質問をいただいても回答できないので、GitHubのIssueに書いていただけると助かります。"
@@ -116,19 +120,19 @@ msgstr ""
 
 #: src/class-miyasan.php:68
 msgid "FTPなんてまだあるのか。。。"
-msgstr ""
+msgstr "FTP? Whatta stone aged staff."
 
 #: src/class-miyasan.php:69
 msgid "プルリクエストありがとうございます！"
-msgstr ""
+msgstr "Thank you for your pull request!"
 
 #: src/class-miyasan.php:36
 msgid "台風中継でおなじみの和歌山県串本町から来ました。"
-msgstr ""
+msgstr "Hello! I came from “The Typhoon City” Kushimoto, Wakayama pref."
 
 #: src/class-miyasan.php:37
 msgid "お客さんから不吉なメールが来た。見なかったことにしよう。。。"
-msgstr ""
+msgstr "Uh? I got a ominous mail from my client. ……OK, OK, I've got NO MAIL FROM HIM."
 
 #: src/class-miyasan.php:38
 msgid "めんどくさい案件を全部断って楽な案件だけを求め続けてたらいつのまにか串本に住んでました。"
@@ -136,11 +140,11 @@ msgstr ""
 
 #: src/class-miyasan.php:39
 msgid "え？まだMAMPで消耗してるの？"
-msgstr ""
+msgstr "MAMP? What stone aged stuff! "
 
 #: src/class-miyasan.php:40
 msgid "え？まだこれからもMAMPで消耗してるの？"
-msgstr ""
+msgstr "MAMP? What stone aged stuff! Do you know we live in 21st century?"
 
 #: src/class-miyasan.php:41
 msgid "Windowsはガン無視です 笑"
