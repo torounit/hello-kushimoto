@@ -1,0 +1,167 @@
+# Translation of Hello Kushimoto in English
+# This file is distributed under the same license as the Hello Kushimoto package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-11-08 07:16:40+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/1.0-alpha-1100\n"
+"Project-Id-Version: Hello Kushimoto\n"
+
+#. Plugin Name of the plugin/theme
+msgid "Hello Kushimoto"
+msgstr "Hello Kushimoto"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/torounit/hello-kushimoto/"
+msgstr "https://github.com/torounit/hello-kushimoto/"
+
+#. Description of the plugin/theme
+msgid "This is not just a plugin. When activated you will randomly see a Quotations of legendry engineer Mr. M in the upper right of your admin screen on every page."
+msgstr "This is not just a plugin. When activated you will randomly see a Quotations of legendry engineer Mr. M in the upper right of your admin screen on every page."
+
+#. Author of the plugin/theme
+msgid "Toro_Unit"
+msgstr "Toro_Unit"
+
+#. Author URI of the plugin/theme
+msgid "https://github.com/torounit/"
+msgstr "https://github.com/torounit/"
+
+#: src/class-miyasan.php:42
+msgid "sudoならインストールできた？ だめですよそんなのずっとsudoですることになりますよ？"
+msgstr "Were you able to install with sudo command? No way! Do you want to do it forever?"
+
+#: src/class-miyasan.php:43
+msgid "sudoなんて邪道ですよ。そんなもんできたことになりません。"
+msgstr "Using \"sodo\" is not a justice. It doesn't mean you can do it."
+
+#: src/class-miyasan.php:44
+msgid "あのねみなさんね ブログに書いてあるコマンドとか実行しちゃうでしょ あれ大体間違ってますよ"
+msgstr "You know, guys, you may copy the command from blogs, generally these are wrong."
+
+#: src/class-miyasan.php:45
+msgid "みなさん自分が苦労したこと記事に書きたくなるでしょ？ 苦労したって事はそれはどっか間違ってんですよ"
+msgstr "Guys, don't you want to write a blog about your trouble? That's why these must be wrong because you had a trouble."
+
+#: src/class-miyasan.php:46
+msgid "CMSのコアのソースを読むとか時間の無駄"
+msgstr "It's a waste of time to read a source of CMS."
+
+#: src/class-miyasan.php:47
+msgid "お見積依頼ですか？"
+msgstr "Is it a request of quote?"
+
+#: src/class-miyasan.php:48
+msgid "それプルリクください"
+msgstr "Give it to me with pull request."
+
+#: src/class-miyasan.php:49
+msgid "プルリクお待ちしてます!"
+msgstr "I'm waiting your pull request!"
+
+#: src/class-miyasan.php:50
+msgid "なぜそうなるかわかりますか？"
+msgstr "Do you understand why it works?"
+
+#: src/class-miyasan.php:51
+msgid "整理できていない知識はないのと同じですよ"
+msgstr "If you don't understand well, it's the same as you know nothing."
+
+#: src/class-miyasan.php:52
+msgid "とりあえず何か公開しろ。話はそれからじゃっ！"
+msgstr "Publish it NOW! That makes your first step."
+
+#: src/class-miyasan.php:53
+msgid "オープンソースっぽくない奴はほんとダメ"
+msgstr "The guy without Open Source Software is crap."
+
+#: src/class-miyasan.php:54
+msgid "すげー、熱烈に握手をもとめられたのでどうしたのかと思ったら、Contact Form 7の作者とまたもや間違えられました"
+msgstr "I thought, oh wow, he beg me shake hands enthusiastically, how I can do, then I found I had been mistaken for an author of Contact Form 7 again."
+
+#: src/class-miyasan.php:55
+msgid "高速が開通したんだって！大阪まで３時間切るかも！"
+msgstr "High speed road was inaugurated ! , do you cut it to Osaka for three hours?"
+
+#: src/class-miyasan.php:56
+msgid "つくるのはなんでも作りますｗ（岡本さんがｗ"
+msgstr "Any order are welcome (Mr. Okamoto built them ;-) )."
+
+#: src/class-miyasan.php:57
+msgid "仕事や！ 行ってこい！"
+msgstr "Go ahead! Working time!"
+
+#: src/class-miyasan.php:58
+msgid "まじに楽しいのになー。自分が使いたい物を大っぴらに作って放置しとくだけで世界がどれだけ広がるか。"
+msgstr "It's really interesting, you know. How your world will be broader if only you put something you want to use on any public place."
+
+#: src/class-miyasan.php:59
+msgid "自慢じゃないですが、1日で作りました。（自慢ですけど）"
+msgstr "I don’t want to brag, but I made it in a day. (It's brag though.)"
+
+#: src/class-miyasan.php:60
+msgid "え？そんなんできたうちに入りませんよ。rootに変わるなんてうんこです。"
+msgstr "Eh? You can't count it as you done. It's s**t to change to root user."
+
+#: src/class-miyasan.php:61
+msgid "MAMPなんてアンインストールしちゃえばいいんですよ。"
+msgstr "That's better for uninstalling your MAMP."
+
+#: src/class-miyasan.php:62
+msgid "世界は変化してるんです。半年前はそんなのありませんでした。"
+msgstr "The world is changing. It wasn't exist a half year ago."
+
+#: src/class-miyasan.php:63
+msgid "すぐにsudoしたら？って言うエンジニアは信用しちゃいけません。"
+msgstr "Don't believe engineers who often recommend using \"sudo\"."
+
+#: src/class-miyasan.php:64
+msgid "串本の海？台風の後に犬の散歩してると、サメが打ち上げられたりしてますね。"
+msgstr "About beach in Kushimoto? When I take the dog for a walk after typhoon I can see sharks washed ashore."
+
+#: src/class-miyasan.php:65
+msgid "こころが汚いみなさんには見えないと思うけど、今日の串本の星空はめっちゃきれい！"
+msgstr "Though you guys who has dark mind can't see that, tonight's sky in Kushimoto is awesome!"
+
+#: src/class-miyasan.php:66
+msgid "I'm fake Takayuki"
+msgstr "I'm fake Takayuki"
+
+#: src/class-miyasan.php:67
+msgid "DMで質問をいただいても回答できないので、GitHubのIssueに書いていただけると助かります。"
+msgstr "I couldn't answer to questions with direct messages so it would be helpful that you could write it on GitHub Issue."
+
+#: src/class-miyasan.php:68
+msgid "FTPなんてまだあるのか。。。"
+msgstr "There are still people using FTP..."
+
+#: src/class-miyasan.php:69
+msgid "プルリクエストありがとうございます！"
+msgstr "Thank you for your pull request!"
+
+#: src/class-miyasan.php:36
+msgid "台風中継でおなじみの和歌山県串本町から来ました。"
+msgstr "I came from Kushimoto, Wakayama, known as the place of Typhoon TV broadcast."
+
+#: src/class-miyasan.php:37
+msgid "お客さんから不吉なメールが来た。見なかったことにしよう。。。"
+msgstr "I got ominous mail from my clients. I'll behave like I didn't notice."
+
+#: src/class-miyasan.php:38
+msgid "めんどくさい案件を全部断って楽な案件だけを求め続けてたらいつのまにか串本に住んでました。"
+msgstr "As the result of keeping refusing troublesome works and requesting only easy works then I moved to Kushimoto."
+
+#: src/class-miyasan.php:39
+msgid "え？まだMAMPで消耗してるの？"
+msgstr "Huh, are you still wasting time with MAMP?"
+
+#: src/class-miyasan.php:40
+msgid "え？まだこれからもMAMPで消耗してるの？"
+msgstr "Huh, are you still going to keep wasting time with MAMP?"
+
+#: src/class-miyasan.php:41
+msgid "Windowsはガン無視です 笑"
+msgstr "Windows is out of consideration. LOL"
