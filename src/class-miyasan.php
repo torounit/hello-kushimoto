@@ -67,6 +67,8 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 			__('DMで質問をいただいても回答できないので、GitHubのIssueに書いていただけると助かります。','hello-kushimoto'),
 			__('FTPなんてまだあるのか。。。','hello-kushimoto'),
 			__('プルリクエストありがとうございます！','hello-kushimoto'),
+			__('できてしまった。','hello-kushimoto'),
+			__('もっとみんなでいろいろ作ってコードを見せびらかしあったりしたいなーと思うんですよね。','hello-kushimoto'),
 		);
 	}
 }
