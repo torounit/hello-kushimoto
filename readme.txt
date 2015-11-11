@@ -3,7 +3,7 @@ Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph, nukaga, marushu, sho
 Tags: wctokyo, kushimoto, sample, joke
 Requires at least: 4.3
 Tested up to: 4.3
-Stable tag: 2.2.0
+Stable tag: 2.2.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
