@@ -1,6 +1,6 @@
 <?php
 
-class Test_Hello_Kushimoto extends WP_UnitTestCase {
+class Test_Hello_Kushimoto_Shortcode extends WP_UnitTestCase {
 
 	public function test_shortcode() {
 		$miyasan = new Miyasan();
