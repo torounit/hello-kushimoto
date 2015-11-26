@@ -26,7 +26,8 @@ abstract class Hello_Kushimoto_Random_Speaker extends Hello_Kushimoto_Speaker {
 	public function say() {
 		$words = $this->get_words();
 
-		$word =  $words[ array_rand( $words ) ];
+		$word = $words[ array_rand( $words ) ];
+
 		return apply_filters( 'miyasan_say', $word );
 	}
 
