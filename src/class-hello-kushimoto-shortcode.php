@@ -19,6 +19,6 @@ class Hello_Kushimoto_Shortcode {
 	 */
 	private function register_shortcode() {
 		$shortcode_tags = apply_filters( 'hello_kushimoto_shortcode_name', 'kushimoto' );
-		add_shortcode( $shortcode_tags, array( $this->speaker, 'talk_message' ) );
+		add_shortcode( $shortcode_tags, array( $this->speaker, 'speak' ) );
 	}
 }

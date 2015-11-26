@@ -18,7 +18,7 @@ abstract class Hello_Kushimoto_Speaker {
 	/**
 	 * @return string
 	 */
-	final public function talk_message() {
-		return apply_filters( 'hello_kushimoto_talk_message', $this->say() );
+	final public function speak() {
+		return apply_filters( 'hello_kushimoto_speak', $this->say() );
 	}
 }
