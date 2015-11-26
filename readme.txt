@@ -31,6 +31,7 @@ This is not just a plugin. When activated you will randomly see a Quotations of 
 
 = 2.3.0 =
 * Add Dashboard Widget.
+* Add WP-CLI command.
 
 = 2.2.0 =
 * add Hello_Kushimoto_Speaker::whoami();
