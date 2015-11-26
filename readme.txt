@@ -2,8 +2,8 @@
 Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph, nukaga, marushu, show-ko, aka, mayukojpn, hnle, mignonstyle,yoshiii
 Tags: wctokyo, kushimoto, sample, joke
 Requires at least: 4.3
-Tested up to: 4.3
-Stable tag: 2.2.2
+Tested up to: 4.4
+Stable tag: 2.3.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,9 @@ This is not just a plugin. When activated you will randomly see a Quotations of 
 
 
 == Changelog ==
+
+= 2.3.0 =
+* Add Dashboard Widget.
 
 = 2.2.0 =
 * add Hello_Kushimoto_Speaker::whoami();
