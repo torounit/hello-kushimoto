@@ -69,6 +69,10 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 			__( 'プルリクエストありがとうございます！', 'hello-kushimoto' ),
 			__( 'できてしまった。', 'hello-kushimoto' ),
 			__( 'もっとみんなでいろいろ作ってコードを見せびらかしあったりしたいなーと思うんですよね。', 'hello-kushimoto' ),
+			__( '今度腰カクカクしながらハグしてあげる！', 'hello-kushimoto' ),
+			__( 'おいこらー仕事やでー。おらおらー！', 'hello-kushimoto' ),
+			__( '自分でやると言っておいてめんどくさくなって押し付けた。', 'hello-kushimoto' ),
+
 		);
 	}
 }
