@@ -11,6 +11,7 @@ Text Domain: hello-kushimoto
 Domain Path: /languages
 */
 
+define( 'HELLO_KUSHIMOTO_FILE', __FILE__ );
 define( 'HELLO_KUSHIMOTO_DIR', dirname( __FILE__ ) );
 
 /**
@@ -39,4 +40,4 @@ function hello_kushimoto_init() {
 	new Hello_Kushimoto( $speaker );
 }
 
-add_action( 'plugins_loaded', 'hello_kushimoto_init' );
+add_action( 'wp_loaded', 'hello_kushimoto_init' );

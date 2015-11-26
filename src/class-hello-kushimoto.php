@@ -19,6 +19,7 @@ class Hello_Kushimoto {
 
 		$this->speaker = $speaker;
 
+		new Hello_Kushimoto_Dashboard_Widget( $speaker );
 		new Hello_Kushimoto_Admin_Notices( $speaker );
 		new Hello_Kushimoto_Shortcode( $speaker );
 

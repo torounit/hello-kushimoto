@@ -1,0 +1,21 @@
+.hello-kushimoto-dashboard-widget {
+	position: relative;
+	display: table;
+
+}
+
+.hello-kushimoto-dashboard-widget::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.hello-kushimoto-dashboard-widget-avatar,
+.hello-kushimoto-dashboard-widget-message{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.hello-kushimoto-dashboard-widget-message {
+	padding-left: 13px;
+}
