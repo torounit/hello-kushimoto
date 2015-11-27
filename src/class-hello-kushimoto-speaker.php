@@ -11,6 +11,14 @@ abstract class Hello_Kushimoto_Speaker {
 	abstract public function whoami();
 
 	/**
+	 * @param int $size
+	 * @return false|string
+	 */
+	public function get_avatar( $size = 50 ) {
+		return get_avatar( 0, $size, get_option( 'avatar_default', 'mystery' ), $this->whoami() );
+	}
+
+	/**
 	 * @return string
 	 */
 	abstract public function say();

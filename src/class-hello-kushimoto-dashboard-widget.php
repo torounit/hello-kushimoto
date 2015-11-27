@@ -23,7 +23,10 @@ class Hello_Kushimoto_Dashboard_Widget {
 	public function render() {
 		?>
 		<div class="hello-kushimoto-dashboard-widget">
-			<img alt="" src="https://ps.w.org/hello-kushimoto/assets/icon.svg" class="avatar avatar-50 hello-kushimoto-dashboard-widget-avatar" height="50" width="50">
+			<div class="hello-kushimoto-dashboard-widget-avatar">
+				<?php echo $this->speaker->get_avatar(); ?>
+			</div>
+
 			<div class="hello-kushimoto-dashboard-widget-message">
 				<strong><?php echo esc_html( $this->speaker->speak() );?></strong>
 			</div>

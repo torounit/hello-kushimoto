@@ -18,6 +18,16 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 		return (string) apply_filters( 'miyasan_name', parent::whoami() );
 	}
 
+	/**
+	 * @param int $size
+	 *
+	 * @return string
+	 */
+	public function get_avatar( $size = 50 ) {
+		$src = 'https://ps.w.org/hello-kushimoto/assets/icon.svg';
+		return '<img alt="" src="' . $src . '" class="avatar avatar-50" height="' . esc_attr( $size ) . '" width="' . esc_attr( $size ) . '">
+';
+	}
 
 	/**
 	 * apply original filter say method.
