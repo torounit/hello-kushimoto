@@ -6,9 +6,14 @@ class Test_Miyasan extends WP_UnitTestCase {
 		$miyasan = new Miyasan();
 		$words   = $miyasan->get_words();
 		$this->assertTrue( is_array( $words ) );
-
 	}
 
+	public function test_get_avatar() {
+		$miyasan = new Miyasan();
+		$avator  = $miyasan->get_avatar();
+		$this->assertNotEmpty( $avator );
+	}
+	
 	public function test_say() {
 		$miyasan = new Miyasan();
 		$miyasan->say();
