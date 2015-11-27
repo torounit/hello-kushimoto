@@ -15,9 +15,9 @@ class Hello_Kushimoto {
 	 */
 	public function __construct( Hello_Kushimoto_Speaker $speaker ) {
 
-		load_plugin_textdomain( 'hello-kushimoto', false, plugin_basename( HELLO_KUSHIMOTO_DIR ) . '/languages' );
-
 		$this->speaker = $speaker;
+
+		load_plugin_textdomain( 'hello-kushimoto', false, plugin_basename( HELLO_KUSHIMOTO_DIR ) . '/languages' );
 
 		new Hello_Kushimoto_Dashboard_Widget( $speaker );
 		new Hello_Kushimoto_Admin_Notices( $speaker );

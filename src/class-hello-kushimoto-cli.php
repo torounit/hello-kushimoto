@@ -19,7 +19,7 @@ class Hello_Kushimoto_CLI extends WP_CLI_Command {
 	 * Hello Kushimoto.
 	 *
 	 */
-	public function __invoke( $args, $assoc_args ) {
+	public function __invoke() {
 		echo self::$speaker->speak();
 		echo "\n";
 	}
