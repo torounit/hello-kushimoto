@@ -82,7 +82,8 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 			__( '今度腰カクカクしながらハグしてあげる！', 'hello-kushimoto' ),
 			__( 'おいこらー仕事やでー。おらおらー！', 'hello-kushimoto' ),
 			__( '自分でやると言っておいてめんどくさくなって押し付けた。', 'hello-kushimoto' ),
-
+			__( 'Hiroshi UrabeさんがVCCW 2.18.0をリリースしてくれました！バグがあったら全部この人のせいです！', 'hello-kushimoto' ),
+			__( 'なかなか感動すると思うから試せ。すぐ試せ。それまでご飯抜きね。', 'hello-kushimoto' ),
 		);
 	}
 }
