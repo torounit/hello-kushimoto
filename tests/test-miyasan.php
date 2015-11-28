@@ -13,7 +13,7 @@ class Test_Miyasan extends WP_UnitTestCase {
 		$avator  = $miyasan->get_avatar();
 		$this->assertNotEmpty( $avator );
 	}
-	
+
 	public function test_say() {
 		$miyasan = new Miyasan();
 		$miyasan->say();

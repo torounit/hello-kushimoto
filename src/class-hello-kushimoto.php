@@ -5,6 +5,8 @@
  *
  * plugin core class.
  */
+
+
 class Hello_Kushimoto {
 
 	/** @var Hello_Kushimoto_Speaker */
