@@ -22,8 +22,7 @@ define( 'HELLO_KUSHIMOTO_DIR', dirname( __FILE__ ) );
  */
 function hello_kushimoto_init() {
 
-	$speaker = apply_filters( 'hello_kushimoto_speaker', new Miyasan() );
-	new Hello_Kushimoto( $speaker );
+	new Hello_Kushimoto();
 }
 
 add_action( 'wp_loaded', 'hello_kushimoto_init' );

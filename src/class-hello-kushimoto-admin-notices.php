@@ -20,7 +20,7 @@ class Hello_Kushimoto_Admin_Notices {
 	 * show text in admin.
 	 */
 	public function render() {
-		$chosen = $this->speaker->speak();
+		$chosen = apply_filters( 'hello_kushimoto_admin_notices_word', $this->speaker->speak() );
 		$name   = $this->speaker->whoami();
 		echo "<p class='hello-kushimoto speaker-$name'>$chosen</p>";
 	}
