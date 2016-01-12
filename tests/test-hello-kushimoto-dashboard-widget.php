@@ -2,6 +2,12 @@
 
 require_once 'mock/class-speaker-mock.php';
 
+class Hello_Kushimoto_Dashboard_Widget_For_Test extends Hello_Kushimoto_Dashboard_Widget {
+
+	public function get_widget_title_for_test() {
+		return $this->get_widget_title();
+	}
+}
 
 class Test_Hello_Kushimoto_Dashboard_Widget extends WP_UnitTestCase {
 
@@ -19,14 +25,10 @@ class Test_Hello_Kushimoto_Dashboard_Widget extends WP_UnitTestCase {
 		$this->assertTrue( true );
 	}
 
-	public function test_get_title() {
-		$title = Closure::bind(function(){
-			$speaker = new Speaker_Mock();
-			$obj = new Hello_Kushimoto_Dashboard_Widget( $speaker );
-			return $obj->get_widget_title();
-
-		}, null, 'Hello_Kushimoto_Dashboard_Widget')->__invoke();
-
-		$this->assertEquals($title, "mock says...");
+	public function test_get_widget_title() {
+		$speaker = new Speaker_Mock();
+		$obj   = new Hello_Kushimoto_Dashboard_Widget_For_Test( $speaker );
+		$title = $obj->get_widget_title_for_test();
+		$this->assertEquals( $title, "mock says..." );
 	}
 }

@@ -20,7 +20,7 @@ class Hello_Kushimoto_Dashboard_Widget {
 		);
 	}
 
-	private function get_widget_title() {
+	protected function get_widget_title() {
 		$name = $this->speaker->whoami();
 		return esc_html( sprintf( __( '%s says...' ), $name ) );
 	}
