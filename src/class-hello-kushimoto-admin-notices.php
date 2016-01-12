@@ -30,16 +30,20 @@ class Hello_Kushimoto_Admin_Notices {
 	 */
 	public function add_style() {
 
-		$x     = is_rtl() ? 'left' : 'right';
-		$style = "
-			.hello-kushimoto {
-				float: $x;
-				padding-$x: 15px;
-				padding-top: 5px;
-				margin: 0;
-				font-size: 11px;
-			}
-			";
-		wp_add_inline_style( 'wp-admin', apply_filters( 'hello_kushimoto_style', $style ) );
+		wp_enqueue_style(
+			'hello-kushimoto-admin-notices',
+			plugins_url( 'assets/styles/hello-kushimoto-admin-notices.css', HELLO_KUSHIMOTO_FILE ),
+			array(),
+			HELLO_KUSHIMOTO_VERSION
+		);
+		if ( is_rtl() ) {
+			wp_enqueue_style(
+				'hello-kushimoto-admin-notices-rtl',
+				plugins_url( 'assets/styles/hello-kushimoto-admin-notices-rtl.css', HELLO_KUSHIMOTO_FILE ),
+				array( 'hello-kushimoto-admin-notices' ),
+				HELLO_KUSHIMOTO_VERSION
+			);
+		}
+
 	}
 }
