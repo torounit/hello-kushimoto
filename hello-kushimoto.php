@@ -13,8 +13,29 @@ Domain Path: /languages
 
 require 'autoloader.php';
 
-define( 'HELLO_KUSHIMOTO_FILE', __FILE__ );
+/**
+ * @return array
+ */
+function hello_kushimoto_get_plugin_data() {
+	$headers = array(
+		'Name' => 'Plugin Name',
+		'PluginURI' => 'Plugin URI',
+		'Version' => 'Version',
+		'Description' => 'Description',
+		'Author' => 'Author',
+		'AuthorURI' => 'Author URI',
+		'TextDomain' => 'Text Domain',
+		'DomainPath' => 'Domain Path',
+		'Network' => 'Network',
+	);
+	return get_file_data( __FILE__, $headers );
+}
+
+
 define( 'HELLO_KUSHIMOTO_DIR', dirname( __FILE__ ) );
+define( 'HELLO_KUSHIMOTO_FILE', __FILE__ );
+$hello_kushimoto_data = hello_kushimoto_get_plugin_data();
+define( 'HELLO_KUSHIMOTO_VERSION', $hello_kushimoto_data['Version'] );
 
 
 /**
