@@ -12,14 +12,18 @@ class Hello_Kushimoto {
 	/** @var Hello_Kushimoto_Speaker */
 	private $speaker;
 
+	/** @var Hello_Kushimoto_Option_Manager  */
+	private $option_manager;
+
 	public function __construct() {
 
 		load_plugin_textdomain( 'hello-kushimoto', false, plugin_basename( HELLO_KUSHIMOTO_DIR ) . '/languages' );
 
-		new Hello_Kushimoto_Admin_Panel();
+		$this->option_manager = new Hello_Kushimoto_Option_Manager();
+		new Hello_Kushimoto_Admin_Panel( $this->option_manager );
 
-		$this->speaker = apply_filters( 'hello_kushimoto_speaker', new Miyasan() );
-
+		$speaker = $this->option_manager->get_speaker();
+		$this->speaker = apply_filters( 'hello_kushimoto_speaker', new $speaker );
 		$this->initialize_modules();
 
 	}
