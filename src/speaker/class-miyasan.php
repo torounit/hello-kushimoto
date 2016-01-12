@@ -8,7 +8,7 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 	/**
 	 * @var string NickName
 	 */
-	protected $name = 'mr-m';
+	protected $name = 'Mr. M';
 
 	/**
 	 * apply original filter whoami method
