@@ -9,15 +9,20 @@ class Hello_Kushimoto_Dashboard_Widget {
 
 		$this->speaker = $speaker;
 		add_action( 'wp_dashboard_setup', array( $this, 'setup' ) );
-		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_style'));
+		add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_style' ) );
 	}
 
 	public function setup() {
 		wp_add_dashboard_widget(
 			'hello_kushimoto_widget',
-			'Hello Kushimoto',
+			$this->get_widget_title(),
 			array( $this, 'render' )
 		);
+	}
+
+	private function get_widget_title() {
+		$name = $this->speaker->whoami();
+		return esc_html( sprintf( __( '%s says...' ), $name ) );
 	}
 
 	public function render() {
@@ -28,7 +33,7 @@ class Hello_Kushimoto_Dashboard_Widget {
 			</div>
 
 			<div class="hello-kushimoto-dashboard-widget-message">
-				<strong><?php echo esc_html( $this->speaker->speak() );?></strong>
+				<strong><?php echo esc_html( $this->speaker->speak() ); ?></strong>
 			</div>
 		</div>
 		<?php
@@ -36,8 +41,8 @@ class Hello_Kushimoto_Dashboard_Widget {
 
 	public function enqueue_style() {
 		wp_enqueue_style(
-				'hello-kushimoto-dashboard-widget',
-				plugins_url( 'assets/styles/dashboard-widget.css', HELLO_KUSHIMOTO_FILE )
+			'hello-kushimoto-dashboard-widget',
+			plugins_url( 'assets/styles/dashboard-widget.css', HELLO_KUSHIMOTO_FILE )
 		);
 	}
 }

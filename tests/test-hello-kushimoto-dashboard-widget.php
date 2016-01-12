@@ -1,5 +1,7 @@
 <?php
 
+require_once 'mock/class-speaker-mock.php';
+
 
 class Test_Hello_Kushimoto_Dashboard_Widget extends WP_UnitTestCase {
 
@@ -15,5 +17,16 @@ class Test_Hello_Kushimoto_Dashboard_Widget extends WP_UnitTestCase {
 
 	public function test_sample() {
 		$this->assertTrue( true );
+	}
+
+	public function test_get_title() {
+		$title = Closure::bind(function(){
+			$speaker = new Speaker_Mock();
+			$obj = new Hello_Kushimoto_Dashboard_Widget( $speaker );
+			return $obj->get_widget_title();
+
+		}, null, 'Hello_Kushimoto_Dashboard_Widget')->__invoke();
+
+		$this->assertEquals($title, "mock says...");
 	}
 }
