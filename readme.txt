@@ -29,7 +29,7 @@ This is not just a plugin. When activated you will randomly see a Quotations of 
 
 == Changelog ==
 
-= 2.5.0 =
+= 2.5.1 =
 * Add Option Page.
 * Add Taru Wapuu Speaker.
 
