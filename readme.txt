@@ -3,7 +3,7 @@ Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph, nukaga, marushu, sho
 Tags: wctokyo, kushimoto, sample, joke
 Requires at least: 4.3
 Tested up to: 4.4
-Stable tag: 2.4.1
+Stable tag: 2.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,10 @@ This is not just a plugin. When activated you will randomly see a Quotations of 
 
 
 == Changelog ==
+
+= 2.5.0 =
+* Add Option Page.
+* Add Taru Wapuu Speaker.
 
 = 2.3.0 =
 * Add Dashboard Widget.
