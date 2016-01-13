@@ -1,14 +1,14 @@
 <?php
 
 /**
- * Class Taruwapuu
+ * Class Bash_Wapuu
  */
-class Taru_Wapuu extends Hello_Kushimoto_Random_Speaker {
+class Bash_Wapuu extends Hello_Kushimoto_Random_Speaker {
 
 	/**
 	 * @var string NickName
 	 */
-	protected $name = 'Taru Wapuu';
+	protected $name = 'Bash Wapuu';
 
 
 	/**
@@ -34,7 +34,6 @@ class Taru_Wapuu extends Hello_Kushimoto_Random_Speaker {
 			__( 'おさけがのみたーい', 'hello-kushimoto' ),
 			__( 'びーるがたりなーい', 'hello-kushimoto' ),
 			__( 'I want Beer!!!', 'hello-kushimoto' ),
-			__( 'びーるがたりなーい', 'hello-kushimoto' ),
 		);
 	}
 
