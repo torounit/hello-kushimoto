@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Class Hello_Kushimoto_Admin_Notices
+ *
+ * View class for render admin_notices.
+ */
 class Hello_Kushimoto_Admin_Notices {
 
 	/** @var Hello_Kushimoto_Speaker */

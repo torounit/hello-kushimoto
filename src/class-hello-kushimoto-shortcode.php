@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Class Hello_Kushimoto_Shortcode
+ *
+ * Shortcode [kushimoto]
+ */
 class Hello_Kushimoto_Shortcode {
 
 	/** @var Hello_Kushimoto_Speaker */

@@ -1,7 +1,15 @@
 <?php
 
+/**
+ * Class Hello_Kushimoto_Speaker_Seeker
+ *
+ * Search concrete Speaker class from 'src/speaker/concrete'.
+ */
 class Hello_Kushimoto_Speaker_Seeker {
 
+	/**
+	 * @return array
+	 */
 	public function search_classes() {
 
 		$files = glob( HELLO_KUSHIMOTO_DIR . '/src/speaker/concrete/*.php' );
@@ -15,7 +23,7 @@ class Hello_Kushimoto_Speaker_Seeker {
 		}
 
 		$class_names = array_map( array( $this, 'convert_to_class_name' ), $files );
-		return array_filter( $class_names , array( $this, 'class_exsists')) ;
+		return array_filter( $class_names , array( $this, 'class_exists')) ;
 
 	}
 
@@ -30,7 +38,7 @@ class Hello_Kushimoto_Speaker_Seeker {
 		return implode( '_', array_map( 'ucfirst', $words ) );
 	}
 
-	public function class_exsists( $class_name ) {
+	public function class_exists( $class_name ) {
 		return class_exists( $class_name, true );
 	}
 }

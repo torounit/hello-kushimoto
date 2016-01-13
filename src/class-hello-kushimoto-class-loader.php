@@ -23,6 +23,9 @@ class Hello_Kushimoto_Class_Loader {
 		spl_autoload_register( array( $this, 'autoloader' ) );
 	}
 
+	/**
+	 * @param $class_name
+	 */
 	public function autoloader( $class_name ) {
 		$dir       = $this->base_dir;
 		$file_name = 'class-' . strtolower( str_replace( '_', '-', $class_name ) ) . '.php';

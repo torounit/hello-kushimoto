@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Class Hello_Kushimoto_Option_Manager
+ *
+ * Management Plugin Option.
+ */
+
 class Hello_Kushimoto_Option_Manager {
 
 	const OPTION_NAME = 'hello_kushimoto_options';

@@ -1,7 +1,11 @@
 <?php
 
+/**
+ * Class Hello_Kushimoto_Admin_Panel
+ *
+ * Create option page.
+ */
 class Hello_Kushimoto_Admin_Panel {
-
 
 	/**
 	 * @var Hello_Kushimoto_Option_Manager
@@ -12,6 +16,12 @@ class Hello_Kushimoto_Admin_Panel {
 	 */
 	private $speaker_seeker;
 
+	/**
+	 * Hello_Kushimoto_Admin_Panel constructor.
+	 *
+	 * @param Hello_Kushimoto_Option_Manager $option_manager
+	 * @param Hello_Kushimoto_Speaker_Seeker $speaker_seeker
+	 */
 	public function __construct(
 		Hello_Kushimoto_Option_Manager $option_manager,
 		Hello_Kushimoto_Speaker_Seeker $speaker_seeker

@@ -2,9 +2,14 @@
 
 class Hello_Kushimoto_Dashboard_Widget {
 
-	/** @var Hello_Kushimoto_Random_Speaker_Base */
+	/** @var Hello_Kushimoto_Speaker */
 	private $speaker;
 
+	/**
+	 * Hello_Kushimoto_Dashboard_Widget constructor.
+	 *
+	 * @param Hello_Kushimoto_Speaker $speaker
+	 */
 	public function __construct( Hello_Kushimoto_Speaker $speaker ) {
 
 		$this->speaker = $speaker;
@@ -20,6 +25,9 @@ class Hello_Kushimoto_Dashboard_Widget {
 		);
 	}
 
+	/**
+	 * @return string
+	 */
 	protected function get_widget_title() {
 		$name = $this->speaker->whoami();
 		return esc_html( sprintf( __( '%s says...' ), $name ) );
