@@ -1,8 +1,10 @@
 <?php
-
 /**
  * Class Bash_Wapuu
+ *
+ * @package hello-kushimoto
  */
+
 class Bash_Wapuu extends Hello_Kushimoto_Random_Speaker {
 
 	/**

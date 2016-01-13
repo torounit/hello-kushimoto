@@ -1,8 +1,10 @@
 <?php
-
 /**
- * Class Miyasan
+ * class Miyasan
+ *
+ * @package hello-kushimoto
  */
+
 class Miyasan extends Hello_Kushimoto_Random_Speaker {
 
 	/**
@@ -19,6 +21,8 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 	}
 
 	/**
+	 * Avator image.
+	 *
 	 * @param int $size
 	 *
 	 * @return string
@@ -30,7 +34,7 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 	}
 
 	/**
-	 * apply original filter say method.
+	 * Apply original filter say method.
 	 * @return String
 	 */
 	public function say() {
