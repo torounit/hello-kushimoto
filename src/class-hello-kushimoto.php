@@ -23,15 +23,14 @@ class Hello_Kushimoto {
 		new Hello_Kushimoto_Admin_Panel( $this->option_manager );
 
 		$speaker_class = $this->option_manager->get_speaker();
+
 		if( class_exists( $speaker_class, true ) ) {
 			$speaker = new $speaker_class;
-		}
-		else {
-			$speaker = new Miyasan();
+			$this->speaker = apply_filters( 'hello_kushimoto_speaker', $speaker );
+			$this->initialize_modules();
 		}
 
-		$this->speaker = apply_filters( 'hello_kushimoto_speaker', $speaker );
-		$this->initialize_modules();
+
 
 	}
 
