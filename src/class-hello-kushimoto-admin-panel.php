@@ -7,14 +7,21 @@ class Hello_Kushimoto_Admin_Panel {
 	 * @var Hello_Kushimoto_Option_Manager
 	 */
 	private $option_manager;
+	/**
+	 * @var Hello_Kushimoto_Speaker_Seeker
+	 */
+	private $speaker_seeker;
 
-	public function __construct( Hello_Kushimoto_Option_Manager $option_manager ) {
+	public function __construct(
+		Hello_Kushimoto_Option_Manager $option_manager,
+		Hello_Kushimoto_Speaker_Seeker $speaker_seeker
+	) {
 
 		$this->option_manager = $option_manager;
+		$this->speaker_seeker = $speaker_seeker;
 
 		add_action( 'admin_menu', array( $this, 'admin_menu' ) );
 		add_action( 'admin_init', array( $this, 'admin_init' ) );
-
 	}
 
 	public function admin_menu() {
@@ -40,11 +47,30 @@ class Hello_Kushimoto_Admin_Panel {
 	/**
 	 * @return Hello_Kushimoto_Speaker[]
 	 */
-	private function get_speakers() {
-		return array(
-			new Miyasan(),
-			new Taru_Wapuu()
-		);
+	public function get_speakers() {
+
+		$classes  = $this->speaker_seeker->search_classes();
+		$speakers = array_map( array( $this, 'create_speaker' ), $classes );
+
+		return array_filter( $speakers );
+
+	}
+
+
+	/**
+	 * @param $speaker_class_name
+	 *
+	 * @return Hello_Kushimoto_Speaker|null
+	 */
+	public function create_speaker( $speaker_class_name ) {
+		if ( class_exists( $speaker_class_name, true ) ) {
+			$speaker =  new $speaker_class_name();
+			if( $speaker instanceof Hello_Kushimoto_Speaker ) {
+				return new $speaker;
+			}
+		}
+
+		return null;
 	}
 
 
@@ -62,27 +88,28 @@ class Hello_Kushimoto_Admin_Panel {
 				settings_fields( 'hello_kushimoto_setting' );
 				do_settings_sections( 'hello_kushimoto_setting' );
 				$options = $this->option_manager->get_options();
-				$name = $this->option_manager->get_option_name();
+				$name    = $this->option_manager->get_option_name();
 				?>
 				<table class="form-table">
 					<tbody>
 					<tr>
-						<th scope="row"><label for="<?php echo esc_attr( $name );?>"><?php _e('キャラクター設定',
-									'hello-kushimoto' );?>
-								</label></th>
+						<th scope="row"><label for="<?php echo esc_attr( $name ); ?>"><?php _e( 'キャラクター設定',
+									'hello-kushimoto' ); ?>
+							</label></th>
 						<td>
-							<select name="<?php echo esc_attr( $name );?>[speaker]" id="<?php echo esc_attr( $name );?>">
+							<select name="<?php echo esc_attr( $name ); ?>[speaker]"
+							        id="<?php echo esc_attr( $name ); ?>">
 								<?php
 								$current_speaker = $options['speaker'];
-								$speakers = $this->get_speakers();
+								$speakers        = $this->get_speakers();
 								foreach ( $speakers as $speaker ):
 									$class_name = get_class( $speaker );
 									?>
 									<option value="<?php echo esc_attr( $class_name ); ?>" <?php selected
-									($current_speaker, $class_name);?>>
+									( $current_speaker, $class_name ); ?>>
 										<?php echo esc_html( $speaker->whoami() ); ?>
 									</option>
-								<?php
+									<?php
 								endforeach; ?>
 
 							</select>

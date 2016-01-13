@@ -15,12 +15,16 @@ class Hello_Kushimoto {
 	/** @var Hello_Kushimoto_Option_Manager  */
 	private $option_manager;
 
+	/** @var Hello_Kushimoto_Speaker_Seeker  */
+	private $speaker_seeker;
+
 	public function __construct() {
 
 		load_plugin_textdomain( 'hello-kushimoto', false, plugin_basename( HELLO_KUSHIMOTO_DIR ) . '/languages' );
 
 		$this->option_manager = new Hello_Kushimoto_Option_Manager();
-		new Hello_Kushimoto_Admin_Panel( $this->option_manager );
+		$this->speaker_seeker = new Hello_Kushimoto_Speaker_Seeker();
+		new Hello_Kushimoto_Admin_Panel( $this->option_manager,$this->speaker_seeker );
 
 		$speaker_class = $this->option_manager->get_speaker();
 
