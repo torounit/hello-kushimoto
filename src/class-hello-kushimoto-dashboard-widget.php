@@ -2,10 +2,10 @@
 
 class Hello_Kushimoto_Dashboard_Widget {
 
-	/** @var Hello_Kushimoto_Random_Speaker_Base_Base */
+	/** @var Hello_Kushimoto_Random_Speaker_Base */
 	private $speaker;
 
-	public function __construct( Hello_Kushimoto_Speaker_Base $speaker ) {
+	public function __construct( Hello_Kushimoto_Speaker $speaker ) {
 
 		$this->speaker = $speaker;
 		add_action( 'wp_dashboard_setup', array( $this, 'setup' ) );

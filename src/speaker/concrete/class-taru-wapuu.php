@@ -3,7 +3,7 @@
 /**
  * Class Taruwapuu
  */
-class Taru_Wapuu extends Hello_Kushimoto_Random_Speaker_Base {
+class Taru_Wapuu extends Hello_Kushimoto_Random_Speaker {
 
 	/**
 	 * @var string NickName

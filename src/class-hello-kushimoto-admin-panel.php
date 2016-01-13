@@ -38,7 +38,7 @@ class Hello_Kushimoto_Admin_Panel {
 	}
 
 	/**
-	 * @return Hello_Kushimoto_Speaker_Base[]
+	 * @return Hello_Kushimoto_Speaker[]
 	 */
 	private function get_speakers() {
 		return array(

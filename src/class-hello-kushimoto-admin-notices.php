@@ -2,13 +2,13 @@
 
 class Hello_Kushimoto_Admin_Notices {
 
-	/** @var Hello_Kushimoto_Speaker_Base */
+	/** @var Hello_Kushimoto_Speaker */
 	private $speaker;
 
 	/**
-	 * @param Hello_Kushimoto_Speaker_Base $speaker
+	 * @param Hello_Kushimoto_Speaker $speaker
 	 */
-	public function __construct( Hello_Kushimoto_Speaker_Base $speaker ) {
+	public function __construct( Hello_Kushimoto_Speaker $speaker ) {
 
 		$this->speaker = $speaker;
 
