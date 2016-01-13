@@ -33,13 +33,5 @@ class Hello_Kushimoto_Class_Loader {
 	}
 }
 
-function hello_kushimoto_class_loaders_init() {
-	$file_dir = dirname( __FILE__ );
-	new Hello_Kushimoto_Class_Loader( $file_dir . '/src' );
-	new Hello_Kushimoto_Class_Loader( $file_dir . '/src/speaker/abstract' );
-	new Hello_Kushimoto_Class_Loader( $file_dir . '/src/speaker/concrete' );
-}
-
-hello_kushimoto_class_loaders_init();
 
 
