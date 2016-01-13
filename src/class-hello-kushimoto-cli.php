@@ -5,13 +5,13 @@
  */
 class Hello_Kushimoto_CLI extends WP_CLI_Command {
 
-	/** @var Hello_Kushimoto_Speaker */
+	/** @var Hello_Kushimoto_Speaker_Base */
 	private static $speaker;
 
 	/**
-	 * @param Hello_Kushimoto_Speaker $speaker
+	 * @param Hello_Kushimoto_Speaker_Base $speaker
 	 */
-	public static function set_speaker( Hello_Kushimoto_Speaker $speaker ) {
+	public static function set_speaker( Hello_Kushimoto_Speaker_Base $speaker ) {
 		self::$speaker = $speaker;
 	}
 

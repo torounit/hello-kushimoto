@@ -6,7 +6,7 @@
  * Date: 15/11/03
  * Time: 16:53
  */
-abstract class Hello_Kushimoto_Random_Speaker extends Hello_Kushimoto_Speaker {
+abstract class Hello_Kushimoto_Random_Speaker_Base extends Hello_Kushimoto_Speaker_Base {
 
 	/**
 	 * @var string

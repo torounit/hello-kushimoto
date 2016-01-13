@@ -1,6 +1,6 @@
 <?php
 
-class Speaker_Mock extends Hello_Kushimoto_Speaker {
+class Speaker_Mock extends Hello_Kushimoto_Speaker_Base {
 
 	public function whoami() {
 		// TODO: Implement whoami() method.

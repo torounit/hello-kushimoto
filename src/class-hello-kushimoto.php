@@ -9,7 +9,7 @@
 
 class Hello_Kushimoto {
 
-	/** @var Hello_Kushimoto_Speaker */
+	/** @var Hello_Kushimoto_Speaker_Base */
 	private $speaker;
 
 	/** @var Hello_Kushimoto_Option_Manager  */

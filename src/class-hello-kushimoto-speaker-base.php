@@ -1,9 +1,9 @@
 <?php
 
 /**
- * abstract class Hello_Kushimoto_Speaker
+ * abstract class Hello_Kushimoto_Speaker_Base
  */
-abstract class Hello_Kushimoto_Speaker {
+abstract class Hello_Kushimoto_Speaker_Base {
 
 	/**
 	 * @return string

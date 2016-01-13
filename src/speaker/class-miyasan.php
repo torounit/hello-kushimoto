@@ -3,7 +3,7 @@
 /**
  * Class Miyasan
  */
-class Miyasan extends Hello_Kushimoto_Random_Speaker {
+class Miyasan extends Hello_Kushimoto_Random_Speaker_Base {
 
 	/**
 	 * @var string NickName
