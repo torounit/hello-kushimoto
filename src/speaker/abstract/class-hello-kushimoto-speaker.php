@@ -6,9 +6,16 @@
 abstract class Hello_Kushimoto_Speaker {
 
 	/**
-	 * @return string
+	 * @var string
 	 */
-	abstract public function whoami();
+	protected $name = "Mystery Man";
+
+	/**
+	 * @return string Name
+	 */
+	public function whoami() {
+		return $this->name;
+	}
 
 	/**
 	 * @param int $size

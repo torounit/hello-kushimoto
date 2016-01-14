@@ -9,18 +9,6 @@
 abstract class Hello_Kushimoto_Random_Speaker extends Hello_Kushimoto_Speaker {
 
 	/**
-	 * @var string
-	 */
-	protected $name = "unknown";
-
-	/**
-	 * @return string Name
-	 */
-	public function whoami() {
-		return $this->name;
-	}
-
-	/**
 	 * @return String
 	 */
 	public function say() {
