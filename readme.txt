@@ -3,11 +3,11 @@ Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph, nukaga, marushu, sho
 Tags: wctokyo, kushimoto, sample, joke
 Requires at least: 4.3
 Tested up to: 4.4
-Stable tag: 2.5.0
+Stable tag: 2.6.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This is not just a plugin. When activated you will randomly see a Quotations of legendry engineer Mr. M in the upper right of your admin screen on every page.
+This is not just a plugin. When activated you will randomly see a Quotations of legendary engineer Mr. M in the upper right of your admin screen on every page.
 
 
 == Description ==
@@ -28,6 +28,9 @@ This is not just a plugin. When activated you will randomly see a Quotations of 
 
 
 == Changelog ==
+
+= 2.6.0 =
+* Add Speaker Seeker.
 
 = 2.5.1 =
 * Add Option Page.

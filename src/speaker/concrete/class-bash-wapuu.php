@@ -1,5 +1,6 @@
 <?php
 /**
+ *
  * Class Bash_Wapuu
  *
  * @package hello-kushimoto
