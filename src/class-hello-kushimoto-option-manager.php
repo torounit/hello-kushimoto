@@ -18,7 +18,7 @@ class Hello_Kushimoto_Option_Manager {
 	}
 
 	public static function uninstall() {
-		delete_option( 'hello_kushimoto_options' );
+		delete_option( self::OPTION_NAME );
 	}
 
 	/**
@@ -32,7 +32,7 @@ class Hello_Kushimoto_Option_Manager {
 	 * @return array
 	 */
 	public function get_options() {
-		return get_option( 'hello_kushimoto_options', array(
+		return get_option( self::OPTION_NAME, array(
 			'speaker' => 'Miyasan'
 		) );
 	}
@@ -40,7 +40,7 @@ class Hello_Kushimoto_Option_Manager {
 	/**
 	 * @return string
 	 */
-	public function get_speaker() {
+	public function get_speaker_name() {
 		$options = $this->get_options();
 		return $options['speaker'];
 	}

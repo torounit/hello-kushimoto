@@ -12,12 +12,6 @@ class Hello_Kushimoto {
 	/** @var Hello_Kushimoto_Speaker */
 	private $speaker;
 
-	/** @var Hello_Kushimoto_Option_Manager  */
-	private $option_manager;
-
-	/** @var Hello_Kushimoto_Speaker_Seeker  */
-	private $speaker_seeker;
-
 	/**
 	 * Hello_Kushimoto constructor.
 	 */
@@ -25,15 +19,14 @@ class Hello_Kushimoto {
 
 		load_plugin_textdomain( 'hello-kushimoto', false, plugin_basename( HELLO_KUSHIMOTO_DIR ) . '/languages' );
 
-		$this->option_manager = new Hello_Kushimoto_Option_Manager();
-		$this->speaker_seeker = new Hello_Kushimoto_Speaker_Seeker();
-		new Hello_Kushimoto_Admin_Panel( $this->option_manager,$this->speaker_seeker );
+		$option_manager = new Hello_Kushimoto_Option_Manager();
+		$speaker_seeker = new Hello_Kushimoto_Speaker_Seeker( $option_manager );
+		new Hello_Kushimoto_Admin_Panel( $option_manager, $speaker_seeker );
 
-		$speaker_class = $this->option_manager->get_speaker();
+		$speaker = $speaker_seeker->get_current_speaker();
 
-		if( class_exists( $speaker_class, true ) ) {
-			$speaker       = new $speaker_class;
-			$this->speaker = apply_filters( 'hello_kushimoto_speaker', $speaker );
+		if( $speaker ) {
+			$this->speaker = $speaker;
 			$this->initialize_modules();
 		}
 

@@ -54,36 +54,6 @@ class Hello_Kushimoto_Admin_Panel {
 
 	}
 
-	/**
-	 * @return Hello_Kushimoto_Speaker[]
-	 */
-	public function get_speakers() {
-
-		$classes  = $this->speaker_seeker->search_classes();
-		$speakers = array_map( array( $this, 'create_speaker' ), $classes );
-
-		return array_filter( $speakers );
-
-	}
-
-
-	/**
-	 * @param $speaker_class_name
-	 *
-	 * @return Hello_Kushimoto_Speaker|null
-	 */
-	public function create_speaker( $speaker_class_name ) {
-		if ( class_exists( $speaker_class_name, true ) ) {
-			$speaker =  new $speaker_class_name();
-			if( $speaker instanceof Hello_Kushimoto_Speaker ) {
-				return new $speaker;
-			}
-		}
-
-		return null;
-	}
-
-
 	public function options_page() {
 
 		if ( ! current_user_can( 'manage_options' ) ) {
@@ -110,13 +80,13 @@ class Hello_Kushimoto_Admin_Panel {
 							<select name="<?php echo esc_attr( $name ); ?>[speaker]"
 							        id="<?php echo esc_attr( $name ); ?>">
 								<?php
-								$current_speaker = $options['speaker'];
-								$speakers        = $this->get_speakers();
+								$current_speaker_name = $options['speaker'];
+								$speakers             = $this->speaker_seeker->get_all_speakers();
 								foreach ( $speakers as $speaker ):
 									$class_name = get_class( $speaker );
 									?>
-									<option value="<?php echo esc_attr( $class_name ); ?>" <?php selected
-									( $current_speaker, $class_name ); ?>>
+									<option value="<?php echo esc_attr( $class_name ); ?>" <?php
+									selected( $current_speaker_name, $class_name ); ?>>
 										<?php echo esc_html( $speaker->whoami() ); ?>
 									</option>
 									<?php
