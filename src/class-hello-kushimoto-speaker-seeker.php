@@ -67,11 +67,7 @@ class Hello_Kushimoto_Speaker_Seeker {
 	public function get_all_speakers() {
 
 		$classes  = $this->search_classes();
-		$speakers = array();
-		foreach( $classes as $class_name ) {
-			$speakers[] = $this->create_speaker( $class_name );
-		}
-
+		$speakers = array_map( array( $this, 'create_speaker' ), $classes );
 		return array_filter( $speakers );
 	}
 
