@@ -21,7 +21,7 @@ class Hello_Kushimoto {
 
 		$option_manager = new Hello_Kushimoto_Option_Manager();
 		$speaker_seeker = new Hello_Kushimoto_Speaker_Seeker( $option_manager );
-		new Hello_Kushimoto_Admin_Panel( $option_manager, $speaker_seeker );
+		new Hello_Kushimoto_Option_Page( $option_manager, $speaker_seeker );
 
 		$speaker = $speaker_seeker->get_current_speaker();
 

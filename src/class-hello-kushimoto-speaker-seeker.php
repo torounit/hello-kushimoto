@@ -13,12 +13,19 @@ class Hello_Kushimoto_Speaker_Seeker {
 	private $option_manager;
 
 	/**
+	 * @var array
+	 */
+
+	private $classes;
+
+	/**
 	 * Hello_Kushimoto_Speaker_Seeker constructor.
 	 *
 	 * @param Hello_Kushimoto_Option_Manager $option_manager
 	 */
 	public function __construct( Hello_Kushimoto_Option_Manager $option_manager ) {
 		$this->option_manager = $option_manager;
+		$this->classes = array();
 	}
 
 	/**
@@ -26,18 +33,24 @@ class Hello_Kushimoto_Speaker_Seeker {
 	 */
 	public function search_classes() {
 
+		if( ! empty( $this->classes ) ) {
+			return $this->classes;
+		}
+
 		$files = glob( HELLO_KUSHIMOTO_DIR . '/src/speaker/concrete/*.php' );
 
-		if( empty( $files ) ) {
+		if ( empty( $files ) ) {
 			return array();
 		}
 
-		if( !is_array( $files ) ) {
+		if ( ! is_array( $files ) ) {
 			return array();
 		}
 
 		$class_names = array_map( array( $this, 'convert_to_class_name' ), $files );
-		return array_filter( $class_names , array( $this, 'class_exists') );
+		$this->classes = array_filter( $class_names, array( $this, 'class_exists' ) );
+		return $this->classes;
+
 	}
 
 	/**
@@ -46,8 +59,9 @@ class Hello_Kushimoto_Speaker_Seeker {
 	 * @return string
 	 */
 	private function convert_to_class_name( $filename ) {
-		$basename  = basename( $filename, '.php' );
-		$words = explode( '-', str_replace( 'class-', '', $basename ) );
+		$basename = basename( $filename, '.php' );
+		$words    = explode( '-', str_replace( 'class-', '', $basename ) );
+
 		return implode( '_', array_map( 'ucfirst', $words ) );
 	}
 
@@ -68,8 +82,10 @@ class Hello_Kushimoto_Speaker_Seeker {
 
 		$classes  = $this->search_classes();
 		$speakers = array_map( array( $this, 'create_speaker' ), $classes );
+
 		return array_filter( $speakers );
 	}
+
 
 	/**
 	 * @param $speaker_class_name
@@ -78,8 +94,8 @@ class Hello_Kushimoto_Speaker_Seeker {
 	 */
 	private function create_speaker( $speaker_class_name ) {
 		if ( $this->class_exists( $speaker_class_name ) ) {
-			$speaker =  new $speaker_class_name();
-			if( $speaker instanceof Hello_Kushimoto_Speaker ) {
+			$speaker = new $speaker_class_name();
+			if ( $speaker instanceof Hello_Kushimoto_Speaker ) {
 				return new $speaker;
 			}
 		}
@@ -95,7 +111,8 @@ class Hello_Kushimoto_Speaker_Seeker {
 	 */
 	public function get_current_speaker() {
 		$speaker_class = $this->option_manager->get_speaker_name();
-		return apply_filters( 'hello_kushimoto_speaker', $this->create_speaker( $speaker_class )  );
+
+		return apply_filters( 'hello_kushimoto_speaker', $this->create_speaker( $speaker_class ) );
 
 	}
 }
