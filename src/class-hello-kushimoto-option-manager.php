@@ -8,7 +8,6 @@
 
 class Hello_Kushimoto_Option_Manager {
 
-	const OPTION_NAME = 'hello_kushimoto_options';
 
 	/**
 	 * Hello_Kushimoto_Option constructor.
@@ -18,30 +17,14 @@ class Hello_Kushimoto_Option_Manager {
 	}
 
 	public static function uninstall() {
-		delete_option( self::OPTION_NAME );
+		delete_option( 'hello_kushimoto_speaker' );
 	}
 
-	/**
-	 * @return string
-	 */
-	public function get_option_name() {
-		return self::OPTION_NAME;
-	}
-
-	/**
-	 * @return array
-	 */
-	public function get_options() {
-		return get_option( self::OPTION_NAME, array(
-			'speaker' => 'Miyasan'
-		) );
-	}
 
 	/**
 	 * @return string
 	 */
 	public function get_speaker_name() {
-		$options = $this->get_options();
-		return $options['speaker'];
+		return get_option( 'hello_kushimoto_speaker', 'Miyasan' );
 	}
 }
