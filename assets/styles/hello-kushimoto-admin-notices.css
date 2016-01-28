@@ -5,3 +5,6 @@
 	margin: 0;
 	font-size: 11px;
 }
+.hello-kushimoto + div {
+	clear: both;
+}
