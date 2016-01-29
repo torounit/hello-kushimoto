@@ -5,3 +5,7 @@
 	margin: 0;
 	font-size: 11px;
 }
+
+#wpbody-content > .wrap > h1 {
+	display: inline-block;
+}

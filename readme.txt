@@ -1,9 +1,9 @@
 === Hello Kushimoto ===
-Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph, nukaga, marushu, show-ko, aka, mayukojpn, hnle, mignonstyle,yoshiii
+Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph,mayukojpn, nukaga, marushu, show-ko, aka,  hnle, mignonstyle, yoshiii
 Tags: wctokyo, kushimoto, sample, joke
 Requires at least: 4.3
 Tested up to: 4.4
-Stable tag: 2.8.0
+Stable tag: 2.8.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
