@@ -6,6 +6,6 @@
 	font-size: 11px;
 }
 
-#wpbody-content > .wrap > h1 {
-	display: inline-block;
+#wpbody-content > .wrap > h1 > a {
+	white-space: nowrap;
 }
