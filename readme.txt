@@ -2,8 +2,8 @@
 Contributors: Toro_Unit, miyauchi, hideokamoto, spicagraph,mayukojpn, nukaga, marushu, show-ko, aka,  hnle, mignonstyle, yoshiii
 Tags: wctokyo, kushimoto, sample, joke
 Requires at least: 4.3
-Tested up to: 4.4
-Stable tag: 2.8.2
+Tested up to: 4.5
+Stable tag: 2.9.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,9 @@ This is not just a plugin. When activated you will randomly see a Quotations of 
 
 
 == Changelog ==
+
+= 2.9.0 =
+* Add composer.json.
 
 = 2.8.0 =
 * Use Setting API.
