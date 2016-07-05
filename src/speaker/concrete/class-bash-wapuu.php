@@ -39,6 +39,4 @@ class Bash_Wapuu extends Hello_Kushimoto_Random_Speaker {
 			__( 'I want Beer!!!', 'hello-kushimoto' ),
 		);
 	}
-
-
 }

@@ -68,6 +68,4 @@ Dolly'll never go away again";
 		// And then randomly choose a line
 		return wptexturize( $lyrics[ mt_rand( 0, count( $lyrics ) - 1 ) ] );
 	}
-
-
 }

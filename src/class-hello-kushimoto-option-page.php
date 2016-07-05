@@ -82,7 +82,7 @@ class Hello_Kushimoto_Option_Page {
 			array(
 				'name'    => 'hello_kushimoto_speaker',
 				'options' => $this->create_options(),
-				'current' => $this->option_manager->get_speaker_name()
+				'current' => $this->option_manager->get_speaker_name(),
 			)
 		);
 
@@ -113,7 +113,7 @@ class Hello_Kushimoto_Option_Page {
 	private function create_option( $class, $option_name ) {
 		return array(
 			'value' => $class,
-			'label' => $option_name
+			'label' => $option_name,
 		);
 	}
 
@@ -130,5 +130,4 @@ class Hello_Kushimoto_Option_Page {
 		//echo sprintf( '<p>%s</p>', __( 'Hello Kushimoto の設定ページ。', 'hello-kushimoto' ) );
 
 	}
-
 }

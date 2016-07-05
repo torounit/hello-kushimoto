@@ -8,7 +8,7 @@ abstract class Hello_Kushimoto_Speaker {
 	/**
 	 * @var string
 	 */
-	protected $name = "Mystery Man";
+	protected $name = 'Mystery Man';
 
 	/**
 	 * @return string Name

@@ -23,6 +23,5 @@ class Hello_Kushimoto_CLI extends WP_CLI_Command {
 		echo self::$speaker->speak();
 		echo "\n";
 	}
-
 }
 

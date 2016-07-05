@@ -43,7 +43,7 @@ class Hello_Kushimoto_Option_Page_View {
 		?>
 		<select name="<?php echo esc_attr( $name ); ?>" id="<?php echo esc_attr( $name ); ?>">
 			<?php
-			foreach ( $options as $option ):
+			foreach ( $options as $option ) :
 				?>
 				<option value="<?php echo esc_attr( $option['value'] ); ?>" <?php
 				selected( $current, $option['value'] ); ?>>

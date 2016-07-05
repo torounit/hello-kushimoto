@@ -25,7 +25,7 @@ class Hello_Kushimoto {
 
 		$speaker = $speaker_seeker->get_current_speaker();
 
-		if( $speaker ) {
+		if ( $speaker ) {
 			$this->speaker = $speaker;
 			$this->initialize_modules();
 		}
@@ -46,5 +46,4 @@ class Hello_Kushimoto {
 			WP_CLI::add_command( 'hello-kushimoto', 'Hello_Kushimoto_CLI' );
 		}
 	}
-
 }

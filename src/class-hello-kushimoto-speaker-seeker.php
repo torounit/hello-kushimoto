@@ -33,7 +33,7 @@ class Hello_Kushimoto_Speaker_Seeker {
 	 */
 	public function search_classes() {
 
-		if( ! empty( $this->classes ) ) {
+		if ( ! empty( $this->classes ) ) {
 			return $this->classes;
 		}
 
