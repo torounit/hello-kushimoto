@@ -1,0 +1,6 @@
+{
+  "name": "Hello-kushimoto",
+  "tagline": "This is not just a plugin. When activated you will randomly see a Quotations of legendry engineer Mr. M in the upper right of your admin screen on every page.",
+  "body": "# Hello Kushimoto\r\n\r\n[![Build Status](https://travis-ci.org/torounit/hello-kushimoto.svg)](https://travis-ci.org/torounit/hello-kushimoto)\r\n[![](https://img.shields.io/wordpress/plugin/dt/hello-kushimoto.svg)](https://wordpress.org/plugins/hello-kushimoto/)\r\n[![](https://img.shields.io/wordpress/v/hello-kushimoto.svg)](https://wordpress.org/plugins/hello-kushimoto/)\r\n[![](https://img.shields.io/wordpress/plugin/r/hello-kushimoto.svg)](https://wordpress.org/plugins/hello-kushimoto/)\r\n\r\n[![](https://raw.githubusercontent.com/torounit/hello-kushimoto/assets/banner-1544x500.png)](https://wordpress.org/plugins/hello-kushimoto/)\r\n\r\n* https://wordpress.org/plugins/hello-kushimoto/\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
