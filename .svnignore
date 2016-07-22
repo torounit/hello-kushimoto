@@ -8,7 +8,6 @@ Makefile
 README.md
 _site
 bin
-composer.json
 composer.lock
 node_modules
 npm-debug.log
