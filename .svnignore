@@ -1,5 +1,6 @@
 .DS_Store
 .git
+.github
 .gitignore
 .travis.yml
 Gruntfile.js
