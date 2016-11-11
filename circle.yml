@@ -11,6 +11,7 @@ machine:
 ## Customize dependencies
 dependencies:
   pre:
+    - sudo apt-get update; sudo apt-get install subversion
     - bash bin/install-wp-tests.sh wordpress_test ubuntu '' 127.0.0.1 $WP_VERSION
     - composer install
 
