@@ -37,7 +37,7 @@ class Hello_Kushimoto_Dashboard_Widget {
 		?>
 		<div class="hello-kushimoto-dashboard-widget">
 			<div class="hello-kushimoto-dashboard-widget-avatar">
-				<?php echo get_avatar( 0, 50, get_option( 'avatar_default', 'mystery' ), $this->speaker->whoami() );?>
+				<?php echo wp_kses_post( $this->speaker->get_avatar() ); ?>
 			</div>
 
 			<div class="hello-kushimoto-dashboard-widget-message">

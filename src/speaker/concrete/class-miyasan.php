@@ -1,6 +1,6 @@
 <?php
 /**
- * class Miyasan
+ * Class Miyasan
  *
  * @package hello-kushimoto
  */
@@ -8,12 +8,14 @@
 class Miyasan extends Hello_Kushimoto_Random_Speaker {
 
 	/**
-	 * @var string NickName
+	 * NickName
+	 *
+	 * @var string
 	 */
 	protected $name = 'Mr. M';
 
 	/**
-	 * apply original filter whoami method
+	 * Apply original filter whoami method
 	 *
 	 * @return string
 	 */

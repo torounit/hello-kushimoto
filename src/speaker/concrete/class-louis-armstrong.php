@@ -1,20 +1,21 @@
 <?php
 
 /**
- *
- * Class Bash_Wapuu
+ * Class Louis_Armstrong
  *
  * @package hello-kushimoto
  */
 class Louis_Armstrong extends Hello_Kushimoto_Speaker {
 
 	/**
-	 * @var string NickName
+	 * NickName
+	 * @var string
 	 */
 	protected $name = 'Louis Armstrong';
 
 
 	/**
+	 * Get Avatar.
 	 * @param int $size
 	 *
 	 * @return string
