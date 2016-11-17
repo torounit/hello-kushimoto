@@ -14,6 +14,7 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 
 	/**
 	 * apply original filter whoami method
+	 *
 	 * @return string
 	 */
 	public function whoami() {
@@ -35,6 +36,7 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 
 	/**
 	 * Apply original filter say method.
+	 *
 	 * @return String
 	 */
 	public function say() {
@@ -43,6 +45,7 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 
 	/**
 	 * Dictionary of Mr.M's Quotations.
+	 *
 	 * @return String[]
 	 */
 	public function get_words() {

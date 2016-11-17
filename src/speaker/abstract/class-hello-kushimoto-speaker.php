@@ -19,7 +19,7 @@ abstract class Hello_Kushimoto_Speaker {
 
 	/**
 	 * @param int $size
-	 * @return false|string
+	 * @return false|string `<img>` tag for the user's avatar. False on failure.
 	 */
 	public function get_avatar( $size = 50 ) {
 		return get_avatar( 0, $size, get_option( 'avatar_default', 'mystery' ), $this->whoami() );

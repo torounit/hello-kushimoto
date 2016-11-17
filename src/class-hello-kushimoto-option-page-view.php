@@ -59,7 +59,7 @@ class Hello_Kushimoto_Option_Page_View {
 	public function create_page() {
 
 		if ( ! current_user_can( 'manage_options' ) ) {
-			wp_die( __( 'You do not have sufficient permissions to access this page.' ) );
+			wp_die( esc_html__( 'You do not have sufficient permissions to access this page.' ) );
 		}
 		?>
 		<div class="wrap">

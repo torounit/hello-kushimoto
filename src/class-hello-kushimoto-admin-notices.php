@@ -27,7 +27,9 @@ class Hello_Kushimoto_Admin_Notices {
 	public function render() {
 		$chosen = apply_filters( 'hello_kushimoto_admin_notices_word', $this->speaker->speak() );
 		$name   = strtolower( get_class( $this->speaker ) );
-		echo "<p class='hello-kushimoto speaker-" . esc_attr( $name ) . "'>$chosen</p>";
+		?>
+		<p class="hello-kushimoto speaker-<?php echo esc_attr( $name );?>"><?php echo  esc_html( $chosen );?></p>
+		<?php
 	}
 
 	/**
