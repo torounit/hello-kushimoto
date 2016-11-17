@@ -88,6 +88,7 @@ class Miyasan extends Hello_Kushimoto_Random_Speaker {
 			__( '自分でやると言っておいてめんどくさくなって押し付けた。', 'hello-kushimoto' ),
 			__( 'Hiroshi UrabeさんがVCCW 2.18.0をリリースしてくれました！バグがあったら全部この人のせいです！', 'hello-kushimoto' ),
 			__( 'なかなか感動すると思うから試せ。すぐ試せ。それまでご飯抜きね。', 'hello-kushimoto' ),
+			__( 'オープンソースは課題を解決するためのワークフローです！', 'hello-kushimoto' ),
 		);
 	}
 }
