@@ -9,6 +9,7 @@ class Louis_Armstrong extends Hello_Kushimoto_Speaker {
 
 	/**
 	 * NickName
+	 *
 	 * @var string
 	 */
 	protected $name = 'Louis Armstrong';
@@ -16,6 +17,7 @@ class Louis_Armstrong extends Hello_Kushimoto_Speaker {
 
 	/**
 	 * Get Avatar.
+	 *
 	 * @param int $size
 	 *
 	 * @return string

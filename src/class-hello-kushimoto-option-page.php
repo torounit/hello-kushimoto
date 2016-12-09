@@ -127,7 +127,6 @@ class Hello_Kushimoto_Option_Page {
 	}
 
 	public function section_description() {
-		//echo sprintf( '<p>%s</p>', __( 'Hello Kushimoto の設定ページ。', 'hello-kushimoto' ) );
-
+		// echo sprintf( '<p>%s</p>', __( 'Hello Kushimoto の設定ページ。', 'hello-kushimoto' ) );
 	}
 }
